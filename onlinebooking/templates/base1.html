@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="{{ STATIC_URL }}material/fonts/material-design-icons/material-icons.61bc1caf7f45.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/portal.c2bfd6b9cc10.css">
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/bootstrap.min.css">
+    <script type="text/javascript" src="{{ STATIC_URL }}js/bootstrap.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/bootstrap-datepicker.js"></script>
+    <link rel="stylesheet" href="{{ STATIC_URL }}autocomplete/jquery-ui.css">
+    <script src="{{ STATIC_URL }}autocomplete/jquery-1.10.2.js"></script>
+    <script src="{{ STATIC_URL }}Locations/locations.js"></script>
+
+    <script>
+    $(function() {
+        var tags = ACPStations;
+
+        $("#txtfromstation").autocomplete({
+            source: tags,
+            minLength: 2,
+            select: function (event, ui) {
+
+                document.getElementById("hfromstationcode").value = ui.item.code;
+                //alert(document.getElementById("hfromstationcode").value);
+            }
+        });
+        $("#txttostation").autocomplete({
+            source: tags,
+            minLength: 2,
+            select: function (event, ui) {
+
+                document.getElementById("htostationcode").value = ui.item.code;
+                //alert(document.getElementById("htostationcode").value);
+            }
+        });
+    });
+
+
+    </script>
+
+
+
+
+    <script type="text/javascript" src="{{ STATIC_URL }}js/bootstrap-datepicker.js"></script>
+    <link href="{{ STATIC_URL }}datepicker/jquery-ui-1.9.0.custom.css" rel="stylesheet" type="text/css" />
+    <script src="{{ STATIC_URL }}datepicker/jquery-1.9.1.js" type="text/javascript"></script>
+    <script src="{{ STATIC_URL }}datepicker/jquery-1_10_3-ui.js" type="text/javascript"></script>
+
+</head>
+<body>
+<div>
+    {%block content%}
+    {%endblock%}
+</div>
+</body>
+</html>

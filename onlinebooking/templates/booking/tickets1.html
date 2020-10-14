@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title></title>
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="{{ STATIC_URL }}material/fonts/material-design-icons/material-icons.61bc1caf7f45.css" rel="stylesheet">
+<link href="{{ STATIC_URL }}material/css/materialize.525710e1314c.css" rel="stylesheet">
+<link href="{{ STATIC_URL }}material/css/jquery.datetimepicker.b805db3bb426.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/portal.c2bfd6b9cc10.css">
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/styles.css">
+<link rel="stylesheet" href="{{ STATIC_URL }}css/bootstrap.min.css">
+<script src="{{ STATIC_URL }}js/jquery.min.js"></script>
+<script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
+<style>
+.row {
+	margin: 0px;
+	padding-right: 15px;
+}
+.btn-large {
+	font-size: 16px;
+}
+.table {
+	margin-bottom: 0px;
+}
+.panel-title {
+	font-size: 14px;
+}
+.panel-heading {
+	padding: 0px;
+}
+.h6, h6 {
+	padding-left: 10px;
+}
+</style>
+</head>
+<body>
+<main>
+  <div class="container">
+    <div class="row">
+
+        <h3>Point to Point Tickets</h3>
+        <div class="row">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h6 style="font-size:17px;"> Roma Termini -
+                Milano Centrale -
+                Jan 1st, 2019 </h6>
+            </div>
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width:20%;padding-left: 25px;">Origin</th>
+                    <th style="width:20%;padding-left: 10px;">Destination</th>
+                    <th style="width:10%;">Departure</th>
+                    <th style="width:10%;">Arrival</th>
+                    <th style="width:10%;">Duration</th>
+                    <th style="width:10%;">Changes</th>
+                    <th style="width:10%;">Price from</th>
+                  </tr>
+                </thead>
+              </table>
+              <div class="">
+                <div class="panel-group" id="accordion">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                        <table class="table">
+                          <tr class="a_journey success selected">
+                            <td style="width:20%;"><span class="glyphicon glyphicon-chevron-right"></span> Roma Termini</td>
+                            <td style="width:20%;">Milano Centrale</td>
+                            <td style="width:10%;">08:00</td>
+                            <td style="width:10%;">10:59</td>
+                            <td style="width:10%;">02:59</td>
+                            <td style="width:10%;">0</td>
+                            <td style="width:10%;"> £40.00 </td>
+                          </tr>
+                        </table>
+                        </a> </h4>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        <tbody>
+
+                          <!-- A JOURNEY'S DETAILS -->
+                          <tr style="" class="journey_details">
+                            <td colspan="7"><div class="panel panel-success">
+                                <div class="panel-heading"><span class="glyphicon glyphicon glyphicon-time" aria-hidden="true"></span> Journey Details</div>
+                                <div class="panel-body">
+                                  <ul>
+                                    <li> <span class="fa fa-train" style="padding-right:5px;" data-toggle="popover" data-html="true" data-content="Train Service" data-trigger="hover" data-original-title="" title=""></span> Train 9610
+                                      - Depart <strong>Roma Termini</strong> at 08:00 - Arrive <strong>Milano Centrale</strong> at 10:59 (Trenitalia)</li>
+                                  </ul>
+                                </div>
+                                <!--/panel-body-->
+                              </div>
+
+                              <!--/panel-->
+
+                              <table class="table">
+                                <tbody>
+                                  <tr>
+                                    <th class="col-md-10"> One-Way </th>
+                                    <th class="text-center col-md-1"> Executive<br>
+                                    </th>
+                                    <th class="text-center col-md-1"> Business<br>
+                                    </th>
+                                    <th class="text-center col-md-1"> Business Area Silenzio<br>
+                                    </th>
+                                    <th class="text-center col-md-1"> Premium <br>
+                                    </th>
+                                    <th class="text-center col-md-1"> Standard<br>
+                                    </th>
+                                  </tr>
+                                  <tr>
+                                    <td><div >TrenItalia E-ticket Economy Fare - Res included</div>
+                                      <p class="text-info"> seat reservation: included </p></td>
+                                    <td class="text-center"><a href="traveller-information.html"><p  class="btn btn-default  " title="Add to cart"   style="width:100%"> £233.00&nbsp;<span class="glyphicon glyphicon-shopping-cart" style="font-size:0.8em;"></span> </p></a></td>
+                                    <td class="text-center"><button type="submit" class="btn btn-default btn-style-soft tocart2" title="Add to cart" data-possibleplaceprefsref="2" data-optionreference="1" data-journeyreference="0" data-farereference="2" data-termsandconditionsurl="" data-itinerarytypename="One-Way" style="width:100%"> £117.00&nbsp;<span class="glyphicon glyphicon-shopping-cart" style="font-size:0.8em;"></span> </button></td>
+                                    <td class="text-center"><button type="submit" class="btn btn-default btn-style-soft tocart2" title="Add to cart" data-possibleplaceprefsref="1" data-optionreference="1" data-journeyreference="0" data-farereference="3" data-termsandconditionsurl="" data-itinerarytypename="One-Way" style="width:100%"> £122.00&nbsp;<span class="glyphicon glyphicon-shopping-cart" style="font-size:0.8em;"></span> </button></td>
+                                    <td class="text-center"><button type="submit" class="btn btn-default btn-style-soft tocart2" title="Add to cart" data-possibleplaceprefsref="1" data-optionreference="1" data-journeyreference="0" data-farereference="4" data-termsandconditionsurl="" data-itinerarytypename="One-Way" style="width:100%"> £107.00&nbsp;<span class="glyphicon glyphicon-shopping-cart" style="font-size:0.8em;"></span> </button></td>
+                                    <td class="text-center"><button type="submit" class="btn btn-default btn-style-soft tocart2" title="Add to cart" data-possibleplaceprefsref="5" data-optionreference="1" data-journeyreference="0" data-farereference="5" data-termsandconditionsurl="" data-itinerarytypename="One-Way" style="width:100%"> £87.00&nbsp;<span class="glyphicon glyphicon-shopping-cart" style="font-size:0.8em;"></span> </button></td>
+                                  </tr>
+                                  <tr>
+                                    <td><div id="DisplayName">TrenItalia E-ticket Super Economy Fare -   Res included</div>
+                                      <p class="text-info"> seat reservation: included </p></td>
+                                    <td class="text-center"><button type="submit" class="btn btn-default btn-style-soft tocart2" title="Add to cart" data-possibleplaceprefsref="1" data-optionreference="1" data-journeyreference="0" data-farereference="6" data-termsandconditionsurl="" data-itinerarytypename="One-Way" style="width:100%"> £184.00&nbsp;<span class="glyphicon glyphicon-shopping-cart" style="font-size:0.8em;"></span> </button></td>
+                                    <td class="text-center"><button type="submit" class="btn btn-default btn-style-soft tocart2" title="Add to cart" data-possibleplaceprefsref="2" data-optionreference="1" data-journeyreference="0" data-farereference="7" data-termsandconditionsurl="" data-itinerarytypename="One-Way" style="width:100%"> £87.00&nbsp;<span class="glyphicon glyphicon-shopping-cart" style="font-size:0.8em;"></span> </button></td>
+                                    <td class="text-center"><button type="submit" class="btn btn-default btn-style-soft tocart2" title="Add to cart" data-possibleplaceprefsref="1" data-optionreference="1" data-journeyreference="0" data-farereference="8" data-termsandconditionsurl="" data-itinerarytypename="One-Way" style="width:100%"> £93.00&nbsp;<span class="glyphicon glyphicon-shopping-cart" style="font-size:0.8em;"></span> </button></td>
+                                    <td class="text-center"><button type="submit" class="btn btn-default btn-style-soft tocart2" title="Add to cart" data-possibleplaceprefsref="1" data-optionreference="1" data-journeyreference="0" data-farereference="9" data-termsandconditionsurl="" data-itinerarytypename="One-Way" style="width:100%"> £75.00&nbsp;<span class="glyphicon glyphicon-shopping-cart" style="font-size:0.8em;"></span> </button></td>
+                                    <td class="text-center"><button type="submit" class="btn btn-default btn-style-soft tocart2" title="Add to cart" data-possibleplaceprefsref="5" data-optionreference="1" data-journeyreference="0" data-farereference="10" data-termsandconditionsurl="" data-itinerarytypename="One-Way" style="width:100%"> £40.00&nbsp;<span class="glyphicon glyphicon-shopping-cart" style="font-size:0.8em;"></span> </button></td>
+                                  </tr>
+                                  <tr>
+                                    <td><div id="DisplayName">TrenItalia E-ticket Base Fare - Res included</div>
+                                      <p class="text-info"> seat reservation: included </p></td>
+                                    <td class="text-center"><button type="submit" class="btn btn-default btn-style-soft tocart2" title="Add to cart" data-possibleplaceprefsref="1" data-optionreference="1" data-journeyreference="0" data-farereference="11" data-termsandconditionsurl="" data-itinerarytypename="One-Way" style="width:100%"> £285.00&nbsp;<span class="glyphicon glyphicon-shopping-cart" style="font-size:0.8em;"></span> </button></td>
+                                    <td class="text-center"><button type="submit" class="btn btn-default btn-style-soft tocart2" title="Add to cart" data-possibleplaceprefsref="2" data-optionreference="1" data-journeyreference="0" data-farereference="12" data-termsandconditionsurl="" data-itinerarytypename="One-Way" style="width:100%"> £148.00&nbsp;<span class="glyphicon glyphicon-shopping-cart" style="font-size:0.8em;"></span> </button></td>
+                                    <td class="text-center"><button type="submit" class="btn btn-default btn-style-soft tocart2" title="Add to cart" data-possibleplaceprefsref="1" data-optionreference="1" data-journeyreference="0" data-farereference="13" data-termsandconditionsurl="" data-itinerarytypename="One-Way" style="width:100%"> £148.00&nbsp;<span class="glyphicon glyphicon-shopping-cart" style="font-size:0.8em;"></span> </button></td>
+                                    <td class="text-center"><button type="submit" class="btn btn-default btn-style-soft tocart2" title="Add to cart" data-possibleplaceprefsref="1" data-optionreference="1" data-journeyreference="0" data-farereference="14" data-termsandconditionsurl="" data-itinerarytypename="One-Way" style="width:100%"> £130.00&nbsp;<span class="glyphicon glyphicon-shopping-cart" style="font-size:0.8em;"></span> </button></td>
+                                    <td class="text-center"><button type="submit" class="btn btn-default btn-style-soft tocart2" title="Add to cart" data-possibleplaceprefsref="5" data-optionreference="1" data-journeyreference="0" data-farereference="15" data-termsandconditionsurl="" data-itinerarytypename="One-Way" style="width:100%"> £110.00&nbsp;<span class="glyphicon glyphicon-shopping-cart" style="font-size:0.8em;"></span> </button></td>
+                                  </tr>
+                                </tbody>
+                              </table></td>
+                          </tr>
+                        </tbody>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                        <table class="table">
+                          <tr class="a_journey success selected">
+                            <td style="width:20%;"><span class="glyphicon glyphicon-chevron-right"></span> Roma Termini</td>
+                            <td style="width:20%;">Milano Centrale</td>
+                            <td style="width:10%;">08:00</td>
+                            <td style="width:10%;">10:59</td>
+                            <td style="width:10%;">02:59</td>
+                            <td style="width:10%;">0</td>
+                            <td style="width:10%;"> £40.00 </td>
+                          </tr>
+                        </table>
+                        </a> </h4>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse">
+                      <div class="panel-body"></div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                        <table class="table">
+                          <tr class="a_journey success selected">
+                            <td style="width:20%;"><span class="glyphicon glyphicon-chevron-right"></span> Roma Termini</td>
+                            <td style="width:20%;">Milano Centrale</td>
+                            <td style="width:10%;">08:00</td>
+                            <td style="width:10%;">10:59</td>
+                            <td style="width:10%;">02:59</td>
+                            <td style="width:10%;">0</td>
+                            <td style="width:10%;"> £40.00 </td>
+                          </tr>
+                        </table>
+                        </a> </h4>
+                    </div>
+                    <div id="collapse3" class="panel-collapse collapse">
+                      <div class="panel-body"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</main>
+<script type="text/javascript" src="js/jquery.e40ec2161fe7.js"></script>
+<script type="text/javascript" src="js/datatables.bcf14f55a387.js"></script>
+<script type="text/javascript" src="js/materialize.90f5e15fea59.js"></script>
+<script type="text/javascript" src="js/portal.eef9d8cb6b7e.js"></script>
+<script type="text/javascript" src="js/formset.f7d6a977d248.js"></script>
+</body>
+</html>

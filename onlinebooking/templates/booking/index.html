@@ -1,0 +1,473 @@
+﻿{%extends "base.html"%}
+    {% block content%}
+    <div class="container" style="padding-top:20px;">
+      <input type="hidden" id="hfromstationcode" name="hfromstationcode">
+      <input type="hidden" id="htostationcode" name="htostationcode">
+      <div id="outer" style="  margin: 10px 0px; padding-left:30px; ">
+        <div style="margin:auto; background: #f5f5f5; padding: 10px 10px; border:0; zoom:1; border-radius:5px;" id="cadre">
+          <h3 style="text-align:center;">Point to Point Tickets</h3>
+          <form name="quickbooking" action="{% url 'homedetail' %}" method="post" id="quickbooking" target="_top">
+          {% csrf_token %}
+            <label id="lblerror" style="color:red; font-weight:normal;"></label>
+            <div style=" margin-top: 10px; font-size: 12px; font-weight: normal;">
+              <table class="table">
+                <tr >
+                  <td class="trowpadding text-right">From</td>
+                  <td><input type="text" class="ui-corner-all input-station " style="width: 150px" id="txtfromstation" value="" name="txtfromstation" autocomplete="off"></td>
+                  <td class=" text-right">To</td>
+                  <td><input type="text" class="ui-corner-all input-station" style="width: 150px" id="txttostation" value="" name="txttostation" autocomplete="off"></td>
+                </tr>
+                <tr >
+                  <td class="trowpadding text-right">Departure</td>
+                  <td><input type="text" class="ui-corner-all input-datepicker calendar" style="width: 150px" id="txtfromdate" value="" name="txtfromdate" autocomplete="off"></td>
+                  <td class=" text-right">Dep Time</td>
+                  <td><select name="Ddldeptime" id="Ddldeptime" class="form-control" style="width: 80px" required>
+                      <option value="0:00">0:00</option>
+                      <option value="0:30">0:15</option>
+                      <option value="0:30">0:30</option>
+                      <option value="0:30">0:45</option>
+                      <option value="1:00">1:00</option>
+                      <option value="1:30">1:15</option>
+                      <option value="1:30">1:30</option>
+                      <option value="1:30">1:45</option>
+                      <option value="2:00">2:00</option>
+                      <option value="2:30">2:15</option>
+                      <option value="2:30">2:30</option>
+                      <option value="2:30">2:45</option>
+                      <option value="3:00">3:00</option>
+                      <option value="3:30">3:15</option>
+                      <option value="3:30">3:30</option>
+                      <option value="3:30">3:45</option>
+                      <option value="4:00">4:00</option>
+                      <option value="4:30">4:15</option>
+                      <option value="4:30">4:30</option>
+                      <option value="4:30">4:45</option>
+                      <option value="5:00">5:00</option>
+                      <option value="5:30">5:15</option>
+                      <option value="5:30">5:30</option>
+                      <option value="5:30">5:45</option>
+                      <option value="6:00">6:00</option>
+                      <option value="6:30">6:15</option>
+                      <option value="6:30">6:30</option>
+                      <option value="6:30">6:45</option>
+                      <option value="7:00">7:00</option>
+                      <option value="7:30">7:15</option>
+                      <option value="7:30">7:30</option>
+                      <option value="7:30">7:45</option>
+                      <option selected="selected" value="8:00">8:00</option>
+                      <option value="8:30">8:15</option>
+                      <option value="8:30">8:30</option>
+                      <option value="8:30">8:45</option>
+                      <option value="9:00">9:00</option>
+                      <option value="9:30">9:15</option>
+                      <option value="9:30">9:30</option>
+                      <option value="9:30">9:45</option>
+                      <option value="10:00">10:00</option>
+                      <option value="10:30">10:15</option>
+                      <option value="10:30">10:30</option>
+                      <option value="10:30">10:45</option>
+                      <option value="11:00">11:00</option>
+                      <option value="11:30">11:15</option>
+                      <option value="11:30">11:30</option>
+                      <option value="11:30">11:45</option>
+                      <option value="12:00">12:00</option>
+                      <option value="12:30">12:15</option>
+                      <option value="12:30">12:30</option>
+                      <option value="12:30">12:45</option>
+                      <option value="13:00">13:00</option>
+                      <option value="13:30">13:15</option>
+                      <option value="13:30">13:30</option>
+                      <option value="13:30">13:45</option>
+                      <option value="14:00">14:00</option>
+                      <option value="14:30">14:15</option>
+                      <option value="14:30">14:30</option>
+                      <option value="14:30">14:45</option>
+                      <option value="15:00">15:00</option>
+                      <option value="15:30">15:15</option>
+                      <option value="15:30">15:30</option>
+                      <option value="15:30">15:45</option>
+                      <option value="16:00">16:00</option>
+                      <option value="16:30">16:15</option>
+                      <option value="16:30">16:30</option>
+                      <option value="16:30">16:45</option>
+                      <option value="17:00">17:00</option>
+                      <option value="17:30">17:15</option>
+                      <option value="17:30">17:30</option>
+                      <option value="17:30">17:45</option>
+                      <option value="18:00">18:00</option>
+                      <option value="18:30">18:15</option>
+                      <option value="18:30">18:30</option>
+                      <option value="18:30">18:45</option>
+                      <option value="19:00">19:00</option>
+                      <option value="19:30">19:15</option>
+                      <option value="19:30">19:30</option>
+                      <option value="19:30">19:45</option>
+                      <option value="20:00">20:00</option>
+                      <option value="20:30">20:15</option>
+                      <option value="20:30">20:30</option>
+                      <option value="20:30">20:45</option>
+                      <option value="21:00">21:00</option>
+                      <option value="21:30">21:15</option>
+                      <option value="21:30">21:30</option>
+                      <option value="21:30">21:45</option>
+                      <option value="22:00">22:00</option>
+                      <option value="22:30">22:15</option>
+                      <option value="22:30">22:30</option>
+                      <option value="22:30">22:45</option>
+                      <option value="23:00">23:00</option>
+                      <option value="23:30">23:15</option>
+                      <option value="23:30">23:30</option>
+                      <option value="23:30">23:45</option>
+                      <option value="24:00">24:00</option>
+                      <option value="24:30">24:15</option>
+                      <option value="24:30">24:30</option>
+                      <option value="24:30">24:45</option>
+                    </select></td>
+                </tr>
+                <tr >
+                  <td class="trowpadding text-right">Return (optional)</td>
+                  <td><input type="text" class="ui-corner-all input-datepicker calendar" style="width: 150px" id="txttodate" value="" name="txttodate" autocomplete="off"></td>
+                  <td class=" text-right">Return Time</td>
+                  <td><select name="DdlReturntime" id="DdlReturntime" class="form-control" style="width: 80px" required>
+                      <option value="0:00">0:00</option>
+                      <option value="0:30">0:15</option>
+                      <option value="0:30">0:30</option>
+                      <option value="0:30">0:45</option>
+                      <option value="1:00">1:00</option>
+                      <option value="1:30">1:15</option>
+                      <option value="1:30">1:30</option>
+                      <option value="1:30">1:45</option>
+                      <option value="2:00">2:00</option>
+                      <option value="2:30">2:15</option>
+                      <option value="2:30">2:30</option>
+                      <option value="2:30">2:45</option>
+                      <option value="3:00">3:00</option>
+                      <option value="3:30">3:15</option>
+                      <option value="3:30">3:30</option>
+                      <option value="3:30">3:45</option>
+                      <option value="4:00">4:00</option>
+                      <option value="4:30">4:15</option>
+                      <option value="4:30">4:30</option>
+                      <option value="4:30">4:45</option>
+                      <option value="5:00">5:00</option>
+                      <option value="5:30">5:15</option>
+                      <option value="5:30">5:30</option>
+                      <option value="5:30">5:45</option>
+                      <option value="6:00">6:00</option>
+                      <option value="6:30">6:15</option>
+                      <option value="6:30">6:30</option>
+                      <option value="6:30">6:45</option>
+                      <option value="7:00">7:00</option>
+                      <option value="7:30">7:15</option>
+                      <option value="7:30">7:30</option>
+                      <option value="7:30">7:45</option>
+                      <option selected="selected" value="8:00">8:00</option>
+                      <option value="8:30">8:15</option>
+                      <option value="8:30">8:30</option>
+                      <option value="8:30">8:45</option>
+                      <option value="9:00">9:00</option>
+                      <option value="9:30">9:15</option>
+                      <option value="9:30">9:30</option>
+                      <option value="9:30">9:45</option>
+                      <option value="10:00">10:00</option>
+                      <option value="10:30">10:15</option>
+                      <option value="10:30">10:30</option>
+                      <option value="10:30">10:45</option>
+                      <option value="11:00">11:00</option>
+                      <option value="11:30">11:15</option>
+                      <option value="11:30">11:30</option>
+                      <option value="11:30">11:45</option>
+                      <option value="12:00">12:00</option>
+                      <option value="12:30">12:15</option>
+                      <option value="12:30">12:30</option>
+                      <option value="12:30">12:45</option>
+                      <option value="13:00">13:00</option>
+                      <option value="13:30">13:15</option>
+                      <option value="13:30">13:30</option>
+                      <option value="13:30">13:45</option>
+                      <option value="14:00">14:00</option>
+                      <option value="14:30">14:15</option>
+                      <option value="14:30">14:30</option>
+                      <option value="14:30">14:45</option>
+                      <option value="15:00">15:00</option>
+                      <option value="15:30">15:15</option>
+                      <option value="15:30">15:30</option>
+                      <option value="15:30">15:45</option>
+                      <option value="16:00">16:00</option>
+                      <option value="16:30">16:15</option>
+                      <option value="16:30">16:30</option>
+                      <option value="16:30">16:45</option>
+                      <option value="17:00">17:00</option>
+                      <option value="17:30">17:15</option>
+                      <option value="17:30">17:30</option>
+                      <option value="17:30">17:45</option>
+                      <option value="18:00">18:00</option>
+                      <option value="18:30">18:15</option>
+                      <option value="18:30">18:30</option>
+                      <option value="18:30">18:45</option>
+                      <option value="19:00">19:00</option>
+                      <option value="19:30">19:15</option>
+                      <option value="19:30">19:30</option>
+                      <option value="19:30">19:45</option>
+                      <option value="20:00">20:00</option>
+                      <option value="20:30">20:15</option>
+                      <option value="20:30">20:30</option>
+                      <option value="20:30">20:45</option>
+                      <option value="21:00">21:00</option>
+                      <option value="21:30">21:15</option>
+                      <option value="21:30">21:30</option>
+                      <option value="21:30">21:45</option>
+                      <option value="22:00">22:00</option>
+                      <option value="22:30">22:15</option>
+                      <option value="22:30">22:30</option>
+                      <option value="22:30">22:45</option>
+                      <option value="23:00">23:00</option>
+                      <option value="23:30">23:15</option>
+                      <option value="23:30">23:30</option>
+                      <option value="23:30">23:45</option>
+                      <option value="24:00">24:00</option>
+                      <option value="24:30">24:15</option>
+                      <option value="24:30">24:30</option>
+                      <option value="24:30">24:45</option>
+                    </select></td>
+                </tr>
+                <tr >
+                  <td class="trowpadding text-right" style="padding-top:12px;">No. of Adults</td>
+                  <td><select name="DdlAdults" id="DdlAdults" class="form-control" style="width: 80px">
+                      <option value="0">0</option>
+                      <option value="1" selected="selected">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                    </select></td>
+                 
+                 
+                  <td class="trowpadding text-right" style="padding-top:12px;">Senior / Youth / Child</td>
+                  <td><select name="DdlNonAdults" id="DdlNonAdults" class="form-control" style="width: 80px" onchange="return LoadAges(this.value);">
+                      <option value="0" selected="selected">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                    </select></td>
+                 
+                </tr>
+                <tr>
+				<td colspan="2"></td>
+                  <td colspan="2"><div id="passengers" name="passengersTag" style="padding: 3px 0px 3px 25px;"></div></td>
+                </tr>
+                <input type="hidden" name="childAges" id="child_Ages" value="">
+                <tr >
+				<td colspan="1"></td>
+                  <td style="text-align:right;"><input name="stepTwo.ptPResponseTypes" type="radio" value="TW" id="tickets" checked="checked">
+                    <label for="tickets">Tickets</label></td>
+                  
+                  <td><input name="stepTwo.ptPResponseTypes" type="radio" value="RO" id="seatres">
+                    <label for="seatres">Seat Reservation</label></td>
+                  <td colspan="1"></td>
+                </tr>
+                <tr >
+                  <td class="trowpadding"></td>
+                  <td></td>
+                 <td></td>
+                  <td>
+                    <button type="text" id="submit3" class="btn btn-success" onclick="return Validate();">Book Now!</button>
+					
+					</td> 
+                </tr>
+				<tr>
+				<td colspan="4" style="text-align:right;"><p class="btn btn-warning" type="submit">Next</p></td>
+				</tr>
+              </table>
+              <div id="qb2" class="content" style="display: none;"> Enter child age for best available discounts:
+                <div id="passengers" style="padding: 3px 0px 3px 25px;"> 
+                  <!--Passenger 1:&nbsp;<input class="ui-corner-all" type="text" name="stepTwo.age" maxlength="3" size="2"/>-->
+                  <div style="clear: both; margin-bottom: 15px;float: left !important;padding:3px 5px 3px 0px;">
+                    <input type="text" name="stepTwo.age" id="age0" maxlength="3" size="2" class="ui-corner-all" style="width: 30px">
+                  </div>
+                </div>
+                <div style="clear: both; float: left; width: 80px; padding: 3px 0px 3px 7px;">
+                  <button type="text" id="back">Back</button>
+                </div>
+                <div style="float: left; width: 100px; text-align: left; padding: 3px 0px 3px 7px">
+                  <button type="text" class="btn btn-success" id="submit2">Book Now!</button>
+                </div>
+                <input type="hidden" name="stepTwo.validityDuration" value="any">
+                <input type="hidden" name="stepTwo.version" value="any">
+              </div>
+              <div style="clear: both;">&nbsp;</div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+
+    
+
+    <!-- Internal JS and CSS Start  -->
+
+    <script>
+
+
+        $(document).ready(function () {
+            $("#txtfromdate").datepicker({
+                dateFormat: 'dd-M-yy',
+                minDate: new Date(),
+                changeMonth: true,
+                changeYear: true,
+                yearRange: '1970:2030',
+                showOn: "both",
+                buttonImage: "{{ STATIC_URL }}images/calendar.gif",
+                buttonImageOnly: true
+
+            });
+
+        });
+
+        $(document).ready(function () {
+            $("#txttodate").datepicker({
+                dateFormat: 'dd-M-yy',
+                minDate: new Date(),
+                changeMonth: true,
+                changeYear: true,
+                yearRange: '1970:2030',
+                showOn: "both",
+                buttonImage: "{{ STATIC_URL }}images/calendar.gif",
+                buttonImageOnly: true
+
+            });
+
+        });
+
+        function LoadAges(val)
+        {
+            var message = "";
+            document.getElementById("passengers").innerHTML = "";
+            for (i = 1; i <= val; i++) {
+                var ival = i - 1
+                //if((i == 1) || (i == 3) || (i == 5) || (i == 7) || (i == 9)){
+                message = message + '<input type="text" name="stepTwo.age" id="age' + ival + '" maxlength="3" size="2" class="ui-corner-all" style="width:30px" value=""/>';
+                //}
+                //if((i == 2) || (i == 4) || (i == 6) || (i == 8)){
+                // var message = '<div style="float:left; padding:3px 15px 3px 5px; width:120px;"><input type="text" name="stepTwo.age_' + i + '" id="age' + ival + '" maxlength="3" size="2" class="ui-corner-all" style="width:30px"/></div>';
+                //}
+
+            }
+            if (message.length > 0)
+            {
+
+                document.getElementById("passengers").innerHTML = " Enter age for best available discounts:<br/>"+message;
+            }
+
+
+        }
+
+        function Validate()
+        {
+          
+
+          var dd = document.getElementById('passengers').getElementsByTagName('input')
+          var dataArray = [];
+          $(dd).each(function(){                    
+                dataArray.push($(this).val())                
+          });
+
+          // console.log(dataArray)
+
+          var childTag = document.getElementsByName("childAges")
+          childTag[0].value = JSON.stringify(dataArray);        
+
+
+
+            var boolValid = true;
+            var errorMessage = '';
+            if (document.getElementById("txtfromstation").value == "") {
+                errorMessage += 'Please enter from station' + ", &nbsp;  ";
+                boolValid = false;
+            }
+            if (document.getElementById("txttostation").value == "") {
+                errorMessage += 'Please enter to station' + ", &nbsp;  ";
+                boolValid = false;
+            }
+            if (document.getElementById("txtfromdate").value == "") {
+                errorMessage += 'Please enter departure date' + " ";
+                boolValid = false;
+            }
+            if(!boolValid)
+            {
+                document.getElementById("lblerror").innerHTML = errorMessage;
+            }
+
+            return boolValid;
+        }
+    </script>
+    <style type="text/css">
+input {
+  font-size: 13px;
+  padding: 3px;
+  margin: 0px 2px;
+}
+@media only screen and (min-width: 993px) {
+.container {
+  width: 60% !important;
+}
+}
+select {
+  font-size: 13px;
+   
+  border-radius: 4px !important;
+  border: 1px solid #ccc !important;
+}
+.quickbooking .ui-corner-all, .quickbooking .ui-corner-bottom, .quickbooking .ui-corner-right, .quickbooking .ui-corner-br {
+  border: 1px solid #ccc !important;
+}
+button.ui-widget {
+  font-size: 14px;
+}
+.label {
+  text-align: right;
+  white-space: nowrap;
+}
+.calendar {
+  padding-right: 3px;
+  width: 100px;
+}
+ .table>tbody>tr>td
+ {
+ border:none;
+ }
+body, div, span {
+  font-family: 'Trebuchet MS', 'Helvetica', 'Arial', 'Verdana', 'sans-serif';
+  font-size: 14px !important;
+}
+.trowpadding {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.text-right
+{
+text-align:left !important;
+}
+</style>
+
+1
+
+
+
+
+
+    <!-- Internal JS and CSS End  -->
+{%endblock%}
+

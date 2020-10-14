@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?><ACP_RailAvailRS ResponseType="Native-Availability" xmlns="http://www.acprailinternational.com/API/R2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.acprailinternational.com/API/R2 ACP_RailAvailRS.xsd" Version="1.001" TimeStamp="2019-12-28T21:45:33" Target="Production"><Success/><OriginDestinationOptions><OriginDestinationOption OptionReference="1" IsSubComponent="false"><OriginLocation LocationCode="7000021" Name="London Euston" Country="GB"/><DestinationLocation LocationCode="7000046" Name="Manchester Piccadilly" Country="GB"/><Journeys><Journey JourneyDuration="PT2H5M" IsSubComponent="false"><OriginLocation LocationCode="7000021" Name="London Euston" Country="GB"/><DestinationLocation LocationCode="7000046" Name="Manchester Piccadilly" Country="GB"/><JourneySegments><JourneySegment><TrainSegment DepartureDateTime="2020-06-20T08:00:00" ArrivalDateTime="2020-06-20T10:05:00" TrainNumber="800" JourneyDuration="PT2H5M" TrainServiceType="Train" CrossBorder="false" ReservationMode="Optional" OperatorName="ATOC"><DepartureStation LocationCode="7000021" Name="London Euston" Country="GB"/><ArrivalStation LocationCode="7000046" Name="Manchester Piccadilly" Country="GB"/><RailAmenities><RailAmenity Name=""/><RailAmenity Name="Virgin West Coast"/></RailAmenities><ClassCodes><ClassCode ServiceClass="Standard"/><ClassCode ServiceClass="First"/></ClassCodes></TrainSegment></JourneySegment></JourneySegments><FareRPHs><FareRPH>1</FareRPH><FareRPH>2</FareRPH><FareRPH>3</FareRPH><FareRPH>4</FareRPH></FareRPHs></Journey><Journey JourneyDuration="PT2H7M" IsSubComponent="false"><OriginLocation LocationCode="7000021" Name="London Euston" Country="GB"/><DestinationLocation LocationCode="7000046" Name="Manchester Piccadilly" Country="GB"/><JourneySegments><JourneySegment><TrainSegment DepartureDateTime="2020-06-20T08:20:00" ArrivalDateTime="2020-06-20T10:27:00" TrainNumber="820" JourneyDuration="PT2H7M" TrainServiceType="Train" CrossBorder="false" ReservationMode="Optional" OperatorName="ATOC"><DepartureStation LocationCode="7000021" Name="London Euston" Country="GB"/><ArrivalStation LocationCode="7000046" Name="Manchester Piccadilly" Country="GB"/><RailAmenities><RailAmenity Name=""/><RailAmenity Name="Virgin West Coast"/></RailAmenities><ClassCodes><ClassCode ServiceClass="Standard"/><ClassCode ServiceClass="First"/></ClassCodes></TrainSegment></JourneySegment></JourneySegments><FareRPHs><FareRPH>5</FareRPH><FareRPH>6</FareRPH><FareRPH>7</FareRPH><FareRPH>8</FareRPH></FareRPHs></Journey><Journey JourneyDuration="PT2H6M" IsSubComponent="false"><OriginLocation LocationCode="7000021" Name="London Euston" Country="GB"/><DestinationLocation LocationCode="7000046" Name="Manchester Piccadilly" Country="GB"/><JourneySegments><JourneySegment><TrainSegment DepartureDateTime="2020-06-20T08:40:00" ArrivalDateTime="2020-06-20T10:46:00" TrainNumber="840" JourneyDuration="PT2H6M" TrainServiceType="Train" CrossBorder="false" ReservationMode="Optional" OperatorName="ATOC"><DepartureStation LocationCode="7000021" Name="London Euston" Country="GB"/><ArrivalStation LocationCode="7000046" Name="Manchester Piccadilly" Country="GB"/><RailAmenities><RailAmenity Name=""/><RailAmenity Name="Virgin West Coast"/></RailAmenities><ClassCodes><ClassCode ServiceClass="Standard"/><ClassCode ServiceClass="First"/></ClassCodes></TrainSegment></JourneySegment></JourneySegments><FareRPHs><FareRPH>9</FareRPH><FareRPH>10</FareRPH><FareRPH>11</FareRPH><FareRPH>12</FareRPH></FareRPHs></Journey><Journey JourneyDuration="PT2H5M" IsSubComponent="false"><OriginLocation LocationCode="7000021" Name="London Euston" Country="GB"/><DestinationLocation LocationCode="7000046" Name="Manchester Piccadilly" Country="GB"/><JourneySegments><JourneySegment><TrainSegment DepartureDateTime="2020-06-20T09:00:00" ArrivalDateTime="2020-06-20T11:05:00" TrainNumber="900" JourneyDuration="PT2H5M" TrainServiceType="Train" CrossBorder="false" ReservationMode="Optional" OperatorName="ATOC"><DepartureStation LocationCode="7000021" Name="London Euston" Country="GB"/><ArrivalStation LocationCode="7000046" Name="Manchester Piccadilly" Country="GB"/><RailAmenities><RailAmenity Name=""/><RailAmenity Name="Virgin West Coast"/></RailAmenities><ClassCodes><ClassCode ServiceClass="Standard"/><ClassCode ServiceClass="First"/></ClassCodes></TrainSegment></JourneySegment></JourneySegments><FareRPHs><FareRPH>13</FareRPH><FareRPH>14</FareRPH><FareRPH>15</FareRPH><FareRPH>16</FareRPH></FareRPHs></Journey><Journey JourneyDuration="PT2H7M" IsSubComponent="false"><OriginLocation LocationCode="7000021" Name="London Euston" Country="GB"/><DestinationLocation LocationCode="7000046" Name="Manchester Piccadilly" Country="GB"/><JourneySegments><JourneySegment><TrainSegment DepartureDateTime="2020-06-20T09:20:00" ArrivalDateTime="2020-06-20T11:27:00" TrainNumber="920" JourneyDuration="PT2H7M" TrainServiceType="Train" CrossBorder="false" ReservationMode="Optional" OperatorName="ATOC"><DepartureStation LocationCode="7000021" Name="London Euston" Country="GB"/><ArrivalStation LocationCode="7000046" Name="Manchester Piccadilly" Country="GB"/><RailAmenities><RailAmenity Name=""/><RailAmenity Name="Virgin West Coast"/></RailAmenities><ClassCodes><ClassCode ServiceClass="Standard"/><ClassCode ServiceClass="First"/></ClassCodes></TrainSegment></JourneySegment></JourneySegments><FareRPHs><FareRPH>17</FareRPH><FareRPH>18</FareRPH><FareRPH>19</FareRPH><FareRPH>20</FareRPH></FareRPHs></Journey></Journeys></OriginDestinationOption></OriginDestinationOptions><Fares><Fare FareReference="1" Class="First" IsEstimated="false" IsPreBookable="false" TicketingTimeLimit="2019-12-29T23:59:59.0Z" TicketCount="1" CurrencyCode="EUR" ItineraryType="One-Way-Outbound" IncludesProtectionPlan="false" ReservationRequired="true" ProductName="OFFPEAK Ticket Only On Departure via:Travel is allowed via any permitted route." RouteDescription="Travel is allowed via any permitted route." FareType="Regular" Magic="E91E72B8A6CEF48417F5B23968393AA1
+789C6D51CB6AC33010BCEB2BD2E46CA3A72DE526C93214DA92E2F6147C706253
+5C1C2BC46A4909F9F7AEDD529250A18334DA9D991D2DD67EF3DE6CC3DD6C8D0E
+CDBE8B7CEDF7A1F5FDB09CAD4B54D5F50D52ECBB3644AB43BB6D96B3C545F78B
+0F55F70F9E570740284E628C5E0A0BC79823BDF31F7D18610937EB77BB761840
+6339233866E8A98137A2644C50D11C3E81336F8004034559A25575CC9A50B5DD
+B550D141DD7D068D405843F95C3F3CCC917E9B0CF5BE6F4AF4FC51F5A10D5F63
+D16BDF865FBF37EEA65126BA6B9F45FEA30B499C1627944A650593CE3A9E5BCD
+35CFA8134470295D82B5CDACA13625D6D19C3A43046598712332CE98C3981A82
+54C68D3452332B4DCE542698B6842B2E2C6792297894941B6CB04E29A3206538
+56543B22AC228A1344B113A996094E54A213610D3104E30CA79C482139C88C0B
+9DCFE8B13DFE795F47A444D1D60F63C842C1E4D1A61A2E528AEACDD04DC15CE7
+4F552CA412E31F4CFB1BC5589EA63D020000
+" UseAfterTL="2020-06-20" UseByTL="2020-06-19" TravelDate="2020-06-20" PaxUnits="1" PricingOnRequest="false" BookingOnRequest="false" TicketOption="ETK" PassportRequired="false" DateOfBirthRequired="false" PaxNameRequested="true" CntryResidenceRequired="false" NationalityRequired="false" PlaceOfBirthRequired="false" EmailRequired="false" TicketType="TicketOnly"><ProdMarketingName><![CDATA[<div id="DisplayName">OFFPEAK Ticket Only On Departure</div>]]></ProdMarketingName><PassengerTypePrices><PassengerMixSlice SliceID="1" Code="ALL" Quantity="1" UnitPrice="206.00" TSC="2.40" TotalSliceAmount="208.40" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB1523034B5D433E002B1
+9D4B8B8A3C8BF39D53AC14945C438394B8824B0B0A7232538B4092AE15C91941
+20E57A860696A65CB1B100D07418584E000000
+}"><MixDetails><PassengerPlaceholder Age="-1"/></MixDetails></PassengerMixSlice></PassengerTypePrices><TotalPrice Fare="206.00" TSC="2.40" Amount="208.40" Commission="10.30" Net="198.10" ServiceFee="29.5895"/><OriginLocation LocationCode="7000021" Name="London Euston" Country="GB"/><DestinationLocation LocationCode="7000046" Name="Manchester Piccadilly" Country="GB"/><SubComponents/><IntegratedTotalPrice Fare="206.00" TSC="2.40" Amount="208.40" Commission="10.30" Net="198.10" ServiceFee="29.5895"/><IntegratedPassengerTypePrices><PassengerMixSlice SliceID="1" Code="ALL" Quantity="1" UnitPrice="206.00" TSC="2.40" TotalSliceAmount="208.40" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB1523034B5D433E002B1
+9D4B8B8A3C8BF39D53AC14945C438394B8824B0B0A7232538B4092AE15C91941
+20E57A860696A65CB1B100D07418584E000000
+}"><MixDetails><PassengerPlaceholder Age="-1"/></MixDetails></PassengerMixSlice></IntegratedPassengerTypePrices><PossiblePlacePrefs><PossibleSpecialRequests><SpecialRequest>No preference</SpecialRequest><SpecialRequest>Quiet</SpecialRequest></PossibleSpecialRequests><PossibleCompartmentTypes/><PossiblePositions><Position>No Preference</Position><Position>Window</Position><Position>Aisle</Position></PossiblePositions></PossiblePlacePrefs><SalesConditions RefundPolicy="Tickets are non refundable, non exchangeable"><TermsAndConditions MustAcknowledge="true" URL="https://www.acpsecrets.com/railways-terms-and-conditions/TTL-tod-ow-nores-offpeak.html"/><RefundRules><RefundRule Sequence="1" DateBasis="Issue" WithinDateBasis="-PT24H" PenaltyRate="100.0" MinimumPenalty="0.0"/></RefundRules></SalesConditions></Fare><Fare FareReference="2" Class="Standard" IsEstimated="false" IsPreBookable="false" TicketingTimeLimit="2019-12-29T23:59:59.0Z" TicketCount="1" CurrencyCode="EUR" ItineraryType="One-Way-Outbound" IncludesProtectionPlan="false" ReservationRequired="true" ProductName="OFFPEAK Ticket Only On Departure via:Travel is allowed via any permitted route." RouteDescription="Travel is allowed via any permitted route." FareType="Regular" Magic="2DAB1661A738727674B24BE9E362BED1
+789C6D514D6BE33010BDEB57B8C9D946238D1C29377D190ADDA58BBBA7E08313
+9BE2E2582156972EA5FF7D15B72C4DA9D0456F66DE7BF3B4DE85FD537F8837D9
+8E9CFBD398872E9CE210A6799BED1AD276DD17A43E8D43CCEFCFC3A1DF66EB4F
+D30F21B6E33778D59E1302200B4A1E6ABBCD5881441FC3F31413CC687AD9703C
+0EF39C34B6992814F9D95F4A808520757FFE9328AB3E71D0C4D034E4BE7D717D
+6C87F15AA71E53DFAD4B8389AF4BED2B7D77B722FA71F13385A96FC8AFE7768A
+43FC7B69FA3D0DF1C3EE1773CB260BDDB5CDBA7AD74D41BCAE5FC9462A2BB8F4
+D66365356A74CC0B1028A52FA9B6CE1A6637603DAB98372098A11C1D72EE9132
+0ECA1134D248CDAD3415574E706D01150A8B5C72958A92A1A186EA0DE32C0919
+A48A690FC22A500848891348ADA0A52A7529AC0103941AE71DA449747439E4ED
+8DFC185EFE3BDFE5D090FC10E6B496820248BE6FE74F11E5DD7E1EDF53B90A1F
+CA423114E2F203CBFD071BB29E103A020000
+" UseAfterTL="2020-06-20" UseByTL="2020-06-19" TravelDate="2020-06-20" PaxUnits="1" PricingOnRequest="false" BookingOnRequest="false" TicketOption="ETK" PassportRequired="false" DateOfBirthRequired="false" PaxNameRequested="true" CntryResidenceRequired="false" NationalityRequired="false" PlaceOfBirthRequired="false" EmailRequired="false" TicketType="TicketOnly"><ProdMarketingName><![CDATA[<div id="DisplayName">OFFPEAK Ticket Only On Departure</div>]]></ProdMarketingName><PassengerTypePrices><PassengerMixSlice SliceID="1" Code="ALL" Quantity="1" UnitPrice="118.00" TSC="2.40" TotalSliceAmount="120.40" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB152B034D433E402319D
+4B8B8A3C8BF39D53AC14945C438394B8824B0B0A7232538B4092AE15C9194140
+D540C50696A65CB1B100BDED18244D000000
+}"><MixDetails><PassengerPlaceholder Age="-1"/></MixDetails></PassengerMixSlice></PassengerTypePrices><TotalPrice Fare="118.00" TSC="2.40" Amount="120.40" Commission="5.90" Net="114.50" ServiceFee="16.92455"/><OriginLocation LocationCode="7000021" Name="London Euston" Country="GB"/><DestinationLocation LocationCode="7000046" Name="Manchester Piccadilly" Country="GB"/><SubComponents/><IntegratedTotalPrice Fare="118.00" TSC="2.40" Amount="120.40" Commission="5.90" Net="114.50" ServiceFee="16.92455"/><IntegratedPassengerTypePrices><PassengerMixSlice SliceID="1" Code="ALL" Quantity="1" UnitPrice="118.00" TSC="2.40" TotalSliceAmount="120.40" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB152B034D433E402319D
+4B8B8A3C8BF39D53AC14945C438394B8824B0B0A7232538B4092AE15C9194140
+D540C50696A65CB1B100BDED18244D000000
+}"><MixDetails><PassengerPlaceholder Age="-1"/></MixDetails></PassengerMixSlice></IntegratedPassengerTypePrices><PossiblePlacePrefs><PossibleSpecialRequests><SpecialRequest>No preference</SpecialRequest><SpecialRequest>Quiet</SpecialRequest></PossibleSpecialRequests><PossibleCompartmentTypes/><PossiblePositions><Position>No Preference</Position><Position>Window</Position><Position>Aisle</Position></PossiblePositions></PossiblePlacePrefs><SalesConditions RefundPolicy="Tickets are non refundable, non exchangeable"><TermsAndConditions MustAcknowledge="true" URL="https://www.acpsecrets.com/railways-terms-and-conditions/TTL-tod-ow-nores-offpeak.html"/><RefundRules><RefundRule Sequence="1" DateBasis="Issue" WithinDateBasis="-PT24H" PenaltyRate="100.0" MinimumPenalty="0.0"/></RefundRules></SalesConditions></Fare><Fare FareReference="3" Class="First" IsEstimated="false" IsPreBookable="false" TicketingTimeLimit="2019-12-29T23:59:59.0Z" TicketCount="1" CurrencyCode="EUR" ItineraryType="One-Way-Outbound" IncludesProtectionPlan="false" ReservationRequired="true" ProductName="ANYTIME Ticket Only On Departure via:Travel is allowed via any permitted route." RouteDescription="Travel is allowed via any permitted route." FareType="Regular" Magic="21963E6F63B4E60B7A31F9E6682B4B51
+789C6D51CB6EC23010BCFB2B523827F2631D6C6EB6E34895684595F684720824
+AA52851811535121FEBD26AD2A40B57CB06777676677A72BB7FE6836FE215AA1
+7DB3EB6257BB9D6F5D3FCCA35589AABABE438A5DD7FA78B96F37CD3C9A5E55BF
+3A5F75FFE079B50F08A334C1E8B530F3882680D4D61D7A7F8121FC8CDB6EDB61
+081AF388A40941CFCD258645C250D1EC3F0367DE04121C28CA122DAB63D6F8AA
+ED6E858A2EE43D66812210D6217DA2168B0952EFA3A1DEF54D895E0E55EF5BFF
+75497AEB5BFFEBF7CEDDD8CA4877EBB3C87F74C3244ED3139A09693813D658C8
+8D020519B59C7010C2A65899CC686A66C4589A53AB09A70C33AA498619B31C87
+17921968A1856246E89CC98C33650848E0069860320405058D355633CA6890D2
+802555967023890482005B2ED29912294E65AA526E34D104E38C002322D0583C
+1E743EA3A7F6F8E77E159312C51B3784D6288884A3785D0D57738AEBF5D08DA3
+21371B8034A142527E59C378BF018DAE9F4640020000
+" UseAfterTL="2020-06-20" UseByTL="2020-06-19" TravelDate="2020-06-20" PaxUnits="1" PricingOnRequest="false" BookingOnRequest="false" TicketOption="ETK" PassportRequired="false" DateOfBirthRequired="false" PaxNameRequested="true" CntryResidenceRequired="false" NationalityRequired="false" PlaceOfBirthRequired="false" EmailRequired="false" TicketType="TicketOnly"><ProdMarketingName><![CDATA[<div id="DisplayName">ANYTIME Ticket Only On Departure</div>]]></ProdMarketingName><PassengerTypePrices><PassengerMixSlice SliceID="1" Code="ALL" Quantity="1" UnitPrice="322.00" TSC="2.40" TotalSliceAmount="324.40" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB1523032B1D033E502B1
+9D4B8B8A3C8BF39D53AC14945C438394B8824B0B0A7232538B4092AE15C91941
+40E5867A860696A65CB1B100D143185C4E000000
+}"><MixDetails><PassengerPlaceholder Age="-1"/></MixDetails></PassengerMixSlice></PassengerTypePrices><TotalPrice Fare="322.00" TSC="2.40" Amount="324.40" Commission="16.10" Net="308.30" ServiceFee="46.28925"/><OriginLocation LocationCode="7000021" Name="London Euston" Country="GB"/><DestinationLocation LocationCode="7000046" Name="Manchester Piccadilly" Country="GB"/><SubComponents/><IntegratedTotalPrice Fare="322.00" TSC="2.40" Amount="324.40" Commission="16.10" Net="308.30" ServiceFee="46.28925"/><IntegratedPassengerTypePrices><PassengerMixSlice SliceID="1" Code="ALL" Quantity="1" UnitPrice="322.00" TSC="2.40" TotalSliceAmount="324.40" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB1523032B1D033E502B1
+9D4B8B8A3C8BF39D53AC14945C438394B8824B0B0A7232538B4092AE15C91941
+40E5867A860696A65CB1B100D143185C4E000000
+}"><MixDetails><PassengerPlaceholder Age="-1"/></MixDetails></PassengerMixSlice></IntegratedPassengerTypePrices><PossiblePlacePrefs><PossibleSpecialRequests><SpecialRequest>No preference</SpecialRequest><SpecialRequest>Quiet</SpecialRequest></PossibleSpecialRequests><PossibleCompartmentTypes/><PossiblePositions><Position>No Preference</Position><Position>Window</Position><Position>Aisle</Position></PossiblePositions></PossiblePlacePrefs><SalesConditions RefundPolicy="Tickets are non refundable, non exchangeable"><TermsAndConditions MustAcknowledge="true" URL="https://www.acpsecrets.com/railways-terms-and-conditions/TTL-tod-ow-nores-anytime.html"/><RefundRules><RefundRule Sequence="1" DateBasis="Issue" WithinDateBasis="-PT24H" PenaltyRate="100.0" MinimumPenalty="0.0"/></RefundRules></SalesConditions></Fare><Fare FareReference="4" Class="Standard" IsEstimated="false" IsPreBookable="false" TicketingTimeLimit="2019-12-29T23:59:59.0Z" TicketCount="1" CurrencyCode="EUR" ItineraryType="One-Way-Outbound" IncludesProtectionPlan="false" ReservationRequired="true" ProductName="ANYTIME Ticket Only On Departure via:Travel is allowed via any permitted route." RouteDescription="Travel is allowed via any permitted route." FareType="Regular" Magic="41B9D950C9CB42D77F53CF225BD9E0BF
+789C6D515D6BC230147DCFAF70FA5CC9679BF896A4290CDC70747B923E545B46
+476DC4C6E110FFFB6EBB315416F27073EECD392727B3B5DF7CD4DBF03059A343
+BD6F235FF97D687CD72F26EB0295557587E4FBB609D1EAD06CEBC5647675FBD5
+87B2FD07CFCA032094F13946AFB98572CE91DEF9631706388693F5BB5DD3F7A0
+B19810324FD0733DF4288732AF0F9FC099D5408281A228D0AA3CA575289BF656
+286F61EE31050A20AC607CAA97CB29D2EFA3A1CE7775815E8E65179AF0350CBD
+754DF8F57BE76E7CCA4877EB33CF7E742189F3EC8C12A9AC60D259C733ABB9E6
+297582082EA58BB1B6A935D426C43A9A516788A00C1BCE708A1973185343904A
+B991466A66A5C9984A05D39670C585E54C32054D49B9C106EB84320A52866345
+B523C22AA23841143B916819E358C53A16D6104330B61963440ACA416658E872
+414FCDE9CFFB3A22058AB6BE87871139841A6DCAFE2AA5A8DAF4ED180CB9C91F
+52A26AF881717F038C189E323B020000
+" UseAfterTL="2020-06-20" UseByTL="2020-06-19" TravelDate="2020-06-20" PaxUnits="1" PricingOnRequest="false" BookingOnRequest="false" TicketOption="ETK" PassportRequired="false" DateOfBirthRequired="false" PaxNameRequested="true" CntryResidenceRequired="false" NationalityRequired="false" PlaceOfBirthRequired="false" EmailRequired="false" TicketType="TicketOnly"><ProdMarketingName><![CDATA[<div id="DisplayName">ANYTIME Ticket Only On Departure</div>]]></ProdMarketingName><PassengerTypePrices><PassengerMixSlice SliceID="1" Code="ALL" Quantity="1" UnitPrice="234.00" TSC="2.40" TotalSliceAmount="236.40" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB15230B430D033E002B1
+9D4B8B8A3C8BF39D53AC14945C438394B8824B0B0A7232538B4092AE15C91941
+20E57A860696A65CB1B100CF3318524E000000
+}"><MixDetails><PassengerPlaceholder Age="-1"/></MixDetails></PassengerMixSlice></PassengerTypePrices><TotalPrice Fare="234.00" TSC="2.40" Amount="236.40" Commission="11.70" Net="224.70" ServiceFee="34.29"/><OriginLocation LocationCode="7000021" Name="London Euston" Country="GB"/><DestinationLocation LocationCode="7000046" Name="Manchester Piccadilly" Country="GB"/><SubComponents/><IntegratedTotalPrice Fare="234.00" TSC="2.40" Amount="236.40" Commission="11.70" Net="224.70" ServiceFee="34.29"/><IntegratedPassengerTypePrices><PassengerMixSlice SliceID="1" Code="ALL" Quantity="1" UnitPrice="234.00" TSC="2.40" TotalSliceAmount="236.40" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB15230B430D033E002B1
+9D4B8B8A3C8BF39D53AC14945C438394B8824B0B0A7232538B4092AE15C91941
+20E57A860696A65CB1B100CF3318524E000000
+}"><MixDetails><PassengerPlaceholder Age="-1"/></MixDetails></PassengerMixSlice></IntegratedPassengerTypePrices><PossiblePlacePrefs><PossibleSpecialRequests><SpecialRequest>No preference</SpecialRequest><SpecialRequest>Quiet</SpecialRequest></PossibleSpecialRequests><PossibleCompartmentTypes/><PossiblePositions><Position>No Preference</Position><Position>Window</Position><Position>Aisle</Position></PossiblePositions></PossiblePlacePrefs><SalesConditions RefundPolicy="Tickets are non refundable, non exchangeable"><TermsAndConditions MustAcknowledge="true" URL="https://www.acpsecrets.com/railways-terms-and-conditions/TTL-tod-ow-nores-anytime.html"/><RefundRules><RefundRule Sequence="1" DateBasis="Issue" WithinDateBasis="-PT24H" PenaltyRate="100.0" MinimumPenalty="0.0"/></RefundRules></SalesConditions></Fare><Fare FareReference="5" Class="First" IsEstimated="false" IsPreBookable="false" TicketingTimeLimit="2019-12-29T23:59:59.0Z" TicketCount="1" CurrencyCode="EUR" ItineraryType="One-Way-Outbound" IncludesProtectionPlan="false" ReservationRequired="true" ProductName="OFFPEAK Ticket Only On Departure via:Travel is allowed via any permitted route." RouteDescription="Travel is allowed via any permitted route." FareType="Regular" Magic="E91E72B8A6CEF48417F5B23968393AA1
+789C6D51CB6AC33010BCEB2BD2E46CA3A72DE526C93214DA92E2F6147C706253
+5C1C2BC46A4909F9F7AEDD529250A18334DA9D991D2DD67EF3DE6CC3DD6C8D0E
+CDBE8B7CEDF7A1F5FDB09CAD4B54D5F50D52ECBB3644AB43BB6D96B3C545F78B
+0F55F70F9E570740284E628C5E0A0BC79823BDF31F7D18610937EB77BB761840
+6339233866E8A98137A2644C50D11C3E81336F8004034559A25575CC9A50B5DD
+B550D141DD7D068D405843F95C3F3CCC917E9B0CF5BE6F4AF4FC51F5A10D5F63
+D16BDF865FBF37EEA65126BA6B9F45FEA30B499C1627944A650593CE3A9E5BCD
+35CFA8134470295D82B5CDACA13625D6D19C3A43046598712332CE98C3981A82
+54C68D3452332B4DCE542698B6842B2E2C6792297894941B6CB04E29A3206538
+56543B22AC228A1344B113A996094E54A213610D3104E30CA79C482139C88C0B
+9DCFE8B13DFE795F47A444D1D60F63C842C1E4D1A61A2E528AEACDD04DC15CE7
+4F552CA412E31F4CFB1BC5589EA63D020000
+" UseAfterTL="2020-06-20" UseByTL="2020-06-19" TravelDate="2020-06-20" PaxUnits="1" PricingOnRequest="false" BookingOnRequest="false" TicketOption="ETK" PassportRequired="false" DateOfBirthRequired="false" PaxNameRequested="true" CntryResidenceRequired="false" NationalityRequired="false" PlaceOfBirthRequired="false" EmailRequired="false" TicketType="TicketOnly"><ProdMarketingName><![CDATA[<div id="DisplayName">OFFPEAK Ticket Only On Departure</div>]]></ProdMarketingName><PassengerTypePrices><PassengerMixSlice SliceID="1" Code="ALL" Quantity="1" UnitPrice="206.00" TSC="2.40" TotalSliceAmount="208.40" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB1523034B5D433E002B1
+9D4B8B8A3C8BF39D53AC14945C438394B8824B0B0A7232538B4092AE15C91941
+20E57A860696A65CB1B100D07418584E000000
+}"><MixDetails><PassengerPlaceholder Age="-1"/></MixDetails></PassengerMixSlice></PassengerTypePrices><TotalPrice Fare="206.00" TSC="2.40" Amount="208.40" Commission="10.30" Net="198.10" ServiceFee="29.5895"/><OriginLocation LocationCode="7000021" Name="London Euston" Country="GB"/><DestinationLocation LocationCode="7000046" Name="Manchester Piccadilly" Country="GB"/><SubComponents/><IntegratedTotalPrice Fare="206.00" TSC="2.40" Amount="208.40" Commission="10.30" Net="198.10" ServiceFee="29.5895"/><IntegratedPassengerTypePrices><PassengerMixSlice SliceID="1" Code="ALL" Quantity="1" UnitPrice="206.00" TSC="2.40" TotalSliceAmount="208.40" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB1523034B5D433E002B1
+9D4B8B8A3C8BF39D53AC14945C438394B8824B0B0A7232538B4092AE15C91941
+20E57A860696A65CB1B100D07418584E000000
+}"><MixDetails><PassengerPlaceholder Age="-1"/></MixDetails></PassengerMixSlice></IntegratedPassengerTypePrices><PossiblePlacePrefs><PossibleSpecialRequests><SpecialRequest>No preference</SpecialRequest><SpecialRequest>Quiet</SpecialRequest></PossibleSpecialRequests><PossibleCompartmentTypes/><PossiblePositions><Position>No Preference</Position><Position>Window</Position><Position>Aisle</Position></PossiblePositions></PossiblePlacePrefs><SalesConditions RefundPolicy="Tickets are non refundable, non exchangeable"><TermsAndConditions MustAcknowledge="true" URL="https://www.acpsecrets.com/railways-terms-and-conditions/TTL-tod-ow-nores-offpeak.html"/><RefundRules><RefundRule Sequence="1" DateBasis="Issue" WithinDateBasis="-PT24H" PenaltyRate="100.0" MinimumPenalty="0.0"/></RefundRules></SalesConditions></Fare><Fare FareReference="6" Class="Standard" IsEstimated="false" IsPreBookable="false" TicketingTimeLimit="2019-12-29T23:59:59.0Z" TicketCount="1" CurrencyCode="EUR" ItineraryType="One-Way-Outbound" IncludesProtectionPlan="false" ReservationRequired="true" ProductName="OFFPEAK Ticket Only On Departure via:Travel is allowed via any permitted route." RouteDescription="Travel is allowed via any permitted route." FareType="Regular" Magic="2DAB1661A738727674B24BE9E362BED1
+789C6D514D6BE33010BDEB57B8C9D946238D1C29377D190ADDA58BBBA7E08313
+9BE2E2582156972EA5FF7D15B72C4DA9D0456F66DE7BF3B4DE85FD537F8837D9
+8E9CFBD398872E9CE210A6799BED1AD276DD17A43E8D43CCEFCFC3A1DF66EB4F
+D30F21B6E33778D59E1302200B4A1E6ABBCD5881441FC3F31413CC687AD9703C
+0EF39C34B6992814F9D95F4A808520757FFE9328AB3E71D0C4D034E4BE7D717D
+6C87F15AA71E53DFAD4B8389AF4BED2B7D77B722FA71F13385A96FC8AFE7768A
+43FC7B69FA3D0DF1C3EE1773CB260BDDB5CDBA7AD74D41BCAE5FC9462A2BB8F4
+D66365356A74CC0B1028A52FA9B6CE1A6637603DAB98372098A11C1D72EE9132
+0ECA1134D248CDAD3415574E706D01150A8B5C72958A92A1A186EA0DE32C0919
+A48A690FC22A500848891348ADA0A52A7529AC0103941AE71DA449747439E4ED
+8DFC185EFE3BDFE5D090FC10E6B496820248BE6FE74F11E5DD7E1EDF53B90A1F
+CA423114E2F203CBFD071BB29E103A020000
+" UseAfterTL="2020-06-20" UseByTL="2020-06-19" TravelDate="2020-06-20" PaxUnits="1" PricingOnRequest="false" BookingOnRequest="false" TicketOption="ETK" PassportRequired="false" DateOfBirthRequired="false" PaxNameRequested="true" CntryResidenceRequired="false" NationalityRequired="false" PlaceOfBirthRequired="false" EmailRequired="false" TicketType="TicketOnly"><ProdMarketingName><![CDATA[<div id="DisplayName">OFFPEAK Ticket Only On Departure</div>]]></ProdMarketingName><PassengerTypePrices><PassengerMixSlice SliceID="1" Code="ALL" Quantity="1" UnitPrice="118.00" TSC="2.40" TotalSliceAmount="120.40" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB152B034D433E402319D
+4B8B8A3C8BF39D53AC14945C438394B8824B0B0A7232538B4092AE15C9194140
+D540C50696A65CB1B100BDED18244D000000
+}"><MixDetails><PassengerPlaceholder Age="-1"/></MixDetails></PassengerMixSlice></PassengerTypePrices><TotalPrice Fare="118.00" TSC="2.40" Amount="120.40" Commission="5.90" Net="114.50" ServiceFee="16.92455"/><OriginLocation LocationCode="7000021" Name="London Euston" Country="GB"/><DestinationLocation LocationCode="7000046" Name="Manchester Piccadilly" Country="GB"/><SubComponents/><IntegratedTotalPrice Fare="118.00" TSC="2.40" Amount="120.40" Commission="5.90" Net="114.50" ServiceFee="16.92455"/><IntegratedPassengerTypePrices><PassengerMixSlice SliceID="1" Code="ALL" Quantity="1" UnitPrice="118.00" TSC="2.40" TotalSliceAmount="120.40" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB152B034D433E402319D
+4B8B8A3C8BF39D53AC14945C438394B8824B0B0A7232538B4092AE15C9194140
+D540C50696A65CB1B100BDED18244D000000
+}"><MixDetails><PassengerPlaceholder Age="-1"/></MixDetails></PassengerMixSlice></IntegratedPassengerTypePrices><PossiblePlacePrefs><PossibleSpecialRequests><SpecialRequest>No preference</SpecialRequest><SpecialRequest>Quiet</SpecialRequest></PossibleSpecialRequests><PossibleCompartmentTypes/><PossiblePositions><Position>No Preference</Position><Position>Window</Position><Position>Aisle</Position></PossiblePositions></PossiblePlacePrefs><SalesConditions RefundPolicy="Tickets are non refundable, non exchangeable"><TermsAndConditions MustAcknowledge="true" URL="https://www.acpsecrets.com/railways-terms-and-conditions/TTL-tod-ow-nores-offpeak.html"/><RefundRules><RefundRule Sequence="1" DateBasis="Issue" WithinDateBasis="-PT24H" PenaltyRate="100.0" MinimumPenalty="0.0"/></RefundRules></SalesConditions></Fare><Fare FareReference="7" Class="First" IsEstimated="false" IsPreBookable="false" TicketingTimeLimit="2019-12-29T23:59:59.0Z" TicketCount="1" CurrencyCode="EUR" ItineraryType="One-Way-Outbound" IncludesProtectionPlan="false" ReservationRequired="true" ProductName="ANYTIME Ticket Only On Departure via:Travel is allowed via any permitted route." RouteDescription="Travel is allowed via any permitted route." FareType="Regular" Magic="21963E6F63B4E60B7A31F9E6682B4B51
+789C6D51CB6EC23010BCFB2B523827F2631D6C6EB6E34895684595F684720824
+AA52851811535121FEBD26AD2A40B57CB06777676677A72BB7FE6836FE215AA1
+7DB3EB6257BB9D6F5D3FCCA35589AABABE438A5DD7FA78B96F37CD3C9A5E55BF
+3A5F75FFE079B50F08A334C1E8B530F3882680D4D61D7A7F8121FC8CDB6EDB61
+081AF388A40941CFCD258645C250D1EC3F0367DE04121C28CA122DAB63D6F8AA
+ED6E858A2EE43D66812210D6217DA2168B0952EFA3A1DEF54D895E0E55EF5BFF
+75497AEB5BFFEBF7CEDDD8CA4877EBB3C87F74C3244ED3139A09693813D658C8
+8D020519B59C7010C2A65899CC686A66C4589A53AB09A70C33AA498619B31C87
+17921968A1856246E89CC98C33650848E0069860320405058D355633CA6890D2
+802555967023890482005B2ED29912294E65AA526E34D104E38C002322D0583C
+1E743EA3A7F6F8E77E159312C51B3784D6288884A3785D0D57738AEBF5D08DA3
+21371B8034A142527E59C378BF018DAE9F4640020000
+" UseAfterTL="2020-06-20" UseByTL="2020-06-19" TravelDate="2020-06-20" PaxUnits="1" PricingOnRequest="false" BookingOnRequest="false" TicketOption="ETK" PassportRequired="false" DateOfBirthRequired="false" PaxNameRequested="true" CntryResidenceRequired="false" NationalityRequired="false" PlaceOfBirthRequired="false" EmailRequired="false" TicketType="TicketOnly"><ProdMarketingName><![CDATA[<div id="DisplayName">ANYTIME Ticket Only On Departure</div>]]></ProdMarketingName><PassengerTypePrices><PassengerMixSlice SliceID="1" Code="ALL" Quantity="1" UnitPrice="322.00" TSC="2.40" TotalSliceAmount="324.40" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB1523032B1D033E502B1
+9D4B8B8A3C8BF39D53AC14945C438394B8824B0B0A7232538B4092AE15C91941
+40E5867A860696A65CB1B100D143185C4E000000
+}"><MixDetails><PassengerPlaceholder Age="-1"/></MixDetails></PassengerMixSlice></PassengerTypePrices><TotalPrice Fare="322.00" TSC="2.40" Amount="324.40" Commission="16.10" Net="308.30" ServiceFee="46.28925"/><OriginLocation LocationCode="7000021" Name="London Euston" Country="GB"/><DestinationLocation LocationCode="7000046" Name="Manchester Piccadilly" Country="GB"/><SubComponents/><IntegratedTotalPrice Fare="322.00" TSC="2.40" Amount="324.40" Commission="16.10" Net="308.30" ServiceFee="46.28925"/><IntegratedPassengerTypePrices><PassengerMixSlice SliceID="1" Code="ALL" Quantity="1" UnitPrice="322.00" TSC="2.40" TotalSliceAmount="324.40" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB1523032B1D033E502B1
+9D4B8B8A3C8BF39D53AC14945C438394B8824B0B0A7232538B4092AE15C91941
+40E5867A860696A65CB1B100D143185C4E000000
+}"><MixDetails><PassengerPlaceholder Age="-1"/></MixDetails></PassengerMixSlice></IntegratedPassengerTypePrices><PossiblePlacePrefs><PossibleSpecialRequests><SpecialRequest>No preference</SpecialRequest><SpecialRequest>Quiet</SpecialRequest></PossibleSpecialRequests><PossibleCompartmentTypes/><PossiblePositions><Position>No Preference</Position><Position>Window</Position><Position>Aisle</Position></PossiblePositions></PossiblePlacePrefs><SalesConditions RefundPolicy="Tickets are non refundable, non exchangeable"><TermsAndConditions MustAcknowledge="true" URL="https://www.acpsecrets.com/railways-terms-and-conditions/TTL-tod-ow-nores-anytime.html"/><RefundRules><RefundRule Sequence="1" DateBasis="Issue" WithinDateBasis="-PT24H" PenaltyRate="100.0" MinimumPenalty="0.0"/></RefundRules></SalesConditions></Fare><Fare FareReference="8" Class="Standard" IsEstimated="false" IsPreBookable="false" TicketingTimeLimit="2019-12-29T23:59:59.0Z" TicketCount="1" CurrencyCode="EUR" ItineraryType="One-Way-Outbound" IncludesProtectionPlan="false" ReservationRequired="true" ProductName="ANYTIME Ticket Only On Departure via:Travel is allowed via any permitted route." RouteDescription="Travel is allowed via any permitted route." FareType="Regular" Magic="41B9D950C9CB42D77F53CF225BD9E0BF
+789C6D515D6BC230147DCFAF70FA5CC9679BF896A4290CDC70747B923E545B46
+476DC4C6E110FFFB6EBB315416F27073EECD392727B3B5DF7CD4DBF03059A343
+BD6F235FF97D687CD72F26EB0295557587E4FBB609D1EAD06CEBC5647675FBD5
+87B2FD07CFCA032094F13946AFB98572CE91DEF9631706388693F5BB5DD3F7A0
+B19810324FD0733DF4288732AF0F9FC099D5408281A228D0AA3CA575289BF656
+286F61EE31050A20AC607CAA97CB29D2EFA3A1CE7775815E8E65179AF0350CBD
+754DF8F57BE76E7CCA4877EB33CF7E742189F3EC8C12A9AC60D259C733ABB9E6
+297582082EA58BB1B6A935D426C43A9A516788A00C1BCE708A1973185343904A
+B991466A66A5C9984A05D39670C585E54C32054D49B9C106EB84320A52866345
+B523C22AA23841143B916819E358C53A16D6104330B61963440ACA416658E872
+414FCDE9CFFB3A22058AB6BE87871139841A6DCAFE2AA5A8DAF4ED180CB9C91F
+52A26AF881717F038C189E323B020000
+" UseAfterTL="2020-06-20" UseByTL="2020-06-19" TravelDate="2020-06-20" PaxUnits="1" PricingOnRequest="false" BookingOnRequest="false" TicketOption="ETK" PassportRequired="false" DateOfBirthRequired="false" PaxNameRequested="true" CntryResidenceRequired="false" NationalityRequired="false" PlaceOfBirthRequired="false" EmailRequired="false" TicketType="TicketOnly"><ProdMarketingName><![CDATA[<div id="DisplayName">ANYTIME Ticket Only On Departure</div>]]></ProdMarketingName><PassengerTypePrices><PassengerMixSlice SliceID="1" Code="ALL" Quantity="1" UnitPrice="234.00" TSC="2.40" TotalSliceAmount="236.40" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB15230B430D033E002B1
+9D4B8B8A3C8BF39D53AC14945C438394B8824B0B0A7232538B4092AE15C91941
+20E57A860696A65CB1B100CF3318524E000000
+}"><MixDetails><PassengerPlaceholder Age="-1"/></MixDetails></PassengerMixSlice></PassengerTypePrices><TotalPrice Fare="234.00" TSC="2.40" Amount="236.40" Commission="11.70" Net="224.70" ServiceFee="34.29"/><OriginLocation LocationCode="7000021" Name="London Euston" Country="GB"/><DestinationLocation LocationCode="7000046" Name="Manchester Piccadilly" Country="GB"/><SubComponents/><IntegratedTotalPrice Fare="234.00" TSC="2.40" Amount="236.40" Commission="11.70" Net="224.70" ServiceFee="34.29"/><IntegratedPassengerTypePrices><PassengerMixSlice SliceID="1" Code="ALL" Quantity="1" UnitPrice="234.00" TSC="2.40" TotalSliceAmount="236.40" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB15230B430D033E002B1
+9D4B8B8A3C8BF39D53AC14945C438394B8824B0B0A7232538B4092AE15C91941
+20E57A860696A65CB1B100CF3318524E000000
+}"><MixDetails><PassengerPlaceholder Age="-1"/></MixDetails></PassengerMixSlice></IntegratedPassengerTypePrices><PossiblePlacePrefs><PossibleSpecialRequests><SpecialRequest>No preference</SpecialRequest><SpecialRequest>Quiet</SpecialRequest></PossibleSpecialRequests><PossibleCompartmentTypes/><PossiblePositions><Position>No Preference</Position><Position>Window</Position><Position>Aisle</Position></PossiblePositions></PossiblePlacePrefs><SalesConditions RefundPolicy="Tickets are non refundable, non exchangeable"><TermsAndConditions MustAcknowledge="true" URL="https://www.acpsecrets.com/railways-terms-and-conditions/TTL-tod-ow-nores-anytime.html"/><RefundRules><RefundRule Sequence="1" DateBasis="Issue" WithinDateBasis="-PT24H" PenaltyRate="100.0" MinimumPenalty="0.0"/></RefundRules></SalesConditions></Fare><Fare FareReference="9" Class="First" IsEstimated="false" IsPreBookable="false" TicketingTimeLimit="2019-12-29T23:59:59.0Z" TicketCount="1" CurrencyCode="EUR" ItineraryType="One-Way-Outbound" IncludesProtectionPlan="false" ReservationRequired="true" ProductName="OFFPEAK Ticket Only On Departure via:Travel is allowed via any permitted route." RouteDescription="Travel is allowed via any permitted route." FareType="Regular" Magic="E91E72B8A6CEF48417F5B23968393AA1
+789C6D51CB6AC33010BCEB2BD2E46CA3A72DE526C93214DA92E2F6147C706253
+5C1C2BC46A4909F9F7AEDD529250A18334DA9D991D2DD67EF3DE6CC3DD6C8D0E
+CDBE8B7CEDF7A1F5FDB09CAD4B54D5F50D52ECBB3644AB43BB6D96B3C545F78B
+0F55F70F9E570740284E628C5E0A0BC79823BDF31F7D18610937EB77BB761840
+6339233866E8A98137A2644C50D11C3E81336F8004034559A25575CC9A50B5DD
+B550D141DD7D068D405843F95C3F3CCC917E9B0CF5BE6F4AF4FC51F5A10D5F63
+D16BDF865FBF37EEA65126BA6B9F45FEA30B499C1627944A650593CE3A9E5BCD
+35CFA8134470295D82B5CDACA13625D6D19C3A43046598712332CE98C3981A82
+54C68D3452332B4DCE542698B6842B2E2C6792297894941B6CB04E29A3206538
+56543B22AC228A1344B113A996094E54A213610D3104E30CA79C482139C88C0B
+9DCFE8B13DFE795F47A444D1D60F63C842C1E4D1A61A2E528AEACDD04DC15CE7
+4F552CA412E31F4CFB1BC5589EA63D020000
+" UseAfterTL="2020-06-20" UseByTL="2020-06-19" TravelDate="2020-06-20" PaxUnits="1" PricingOnRequest="false" BookingOnRequest="false" TicketOption="ETK" PassportRequired="false" DateOfBirthRequired="false" PaxNameRequested="true" CntryResidenceRequired="false" NationalityRequired="false" PlaceOfBirthRequired="false" EmailRequired="false" TicketType="TicketOnly"><ProdMarketingName><![CDATA[<div id="DisplayName">OFFPEAK Ticket Only On Departure</div>]]></ProdMarketingName><PassengerTypePrices><PassengerMixSlice SliceID="1" Code="ALL" Quantity="1" UnitPrice="206.00" TSC="2.40" TotalSliceAmount="208.40" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB1523034B5D433E002B1
+9D4B8B8A3C8BF39D53AC14945C438394B8824B0B0A7232538B4092AE15C91941
+20E57A860696A65CB1B100D07418584E000000
+}"><MixDetails><PassengerPlaceholder Age="-1"/></MixDetails></PassengerMixSlice></PassengerTypePrices><TotalPrice Fare="206.00" TSC="2.40" Amount="208.40" Commission="10.30" Net="198.10" ServiceFee="29.5895"/><OriginLocation LocationCode="7000021" Name="London Euston" Country="GB"/><DestinationLocation LocationCode="7000046" Name="Manchester Piccadilly" Country="GB"/><SubComponents/><IntegratedTotalPrice Fare="206.00" TSC="2.40" Amount="208.40" Commission="10.30" Net="198.10" ServiceFee="29.5895"/><IntegratedPassengerTypePrices><PassengerMixSlice SliceID="1" Code="ALL" Quantity="1" UnitPrice="206.00" TSC="2.40" TotalSliceAmount="208.40" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB1523034B5D433E002B1
+9D4B8B8A3C8BF39D53AC14945C438394B8824B0B0A7232538B4092AE15C91941
+20E57A860696A65CB1B100D07418584E000000
+}"><MixDetails><PassengerPlaceholder Age="-1"/></MixDetails></PassengerMixSlice></IntegratedPassengerTypePrices><PossiblePlacePrefs><PossibleSpecialRequests><SpecialRequest>No preference</SpecialRequest><SpecialRequest>Quiet</SpecialRequest></PossibleSpecialRequests><PossibleCompartmentTypes/><PossiblePositions><Position>No Preference</Position><Position>Window</Position><Position>Aisle</Position></PossiblePositions></PossiblePlacePrefs><SalesConditions RefundPolicy="Tickets are non refundable, non exchangeable"><TermsAndConditions MustAcknowledge="true" URL="https://www.acpsecrets.com/railways-terms-and-conditions/TTL-tod-ow-nores-offpeak.html"/><RefundRules><RefundRule Sequence="1" DateBasis="Issue" WithinDateBasis="-PT24H" PenaltyRate="100.0" MinimumPenalty="0.0"/></RefundRules></SalesConditions></Fare><Fare FareReference="10" Class="Standard" IsEstimated="false" IsPreBookable="false" TicketingTimeLimit="2019-12-29T23:59:59.0Z" TicketCount="1" CurrencyCode="EUR" ItineraryType="One-Way-Outbound" IncludesProtectionPlan="false" ReservationRequired="true" ProductName="OFFPEAK Ticket Only On Departure via:Travel is allowed via any permitted route." RouteDescription="Travel is allowed via any permitted route." FareType="Regular" Magic="2DAB1661A738727674B24BE9E362BED1
+789C6D514D6BE33010BDEB57B8C9D946238D1C29377D190ADDA58BBBA7E08313
+9BE2E2582156972EA5FF7D15B72C4DA9D0456F66DE7BF3B4DE85FD537F8837D9
+8E9CFBD398872E9CE210A6799BED1AD276DD17A43E8D43CCEFCFC3A1DF66EB4F
+D30F21B6E33778D59E1302200B4A1E6ABBCD5881441FC3F31413CC687AD9703C
+0EF39C34B6992814F9D95F4A808520757FFE9328AB3E71D0C4D034E4BE7D717D
+6C87F15AA71E53DFAD4B8389AF4BED2B7D77B722FA71F13385A96FC8AFE7768A
+43FC7B69FA3D0DF1C3EE1773CB260BDDB5CDBA7AD74D41BCAE5FC9462A2BB8F4
+D66365356A74CC0B1028A52FA9B6CE1A6637603DAB98372098A11C1D72EE9132
+0ECA1134D248CDAD3415574E706D01150A8B5C72958A92A1A186EA0DE32C0919
+A48A690FC22A500848891348ADA0A52A7529AC0103941AE71DA449747439E4ED
+8DFC185EFE3BDFE5D090FC10E6B496820248BE6FE74F11E5DD7E1EDF53B90A1F
+CA423114E2F203CBFD071BB29E103A020000
+" UseAfterTL="2020-06-20" UseByTL="2020-06-19" TravelDate="2020-06-20" PaxUnits="1" PricingOnRequest="false" BookingOnRequest="false" TicketOption="ETK" PassportRequired="false" DateOfBirthRequired="false" PaxNameRequested="true" CntryResidenceRequired="false" NationalityRequired="false" PlaceOfBirthRequired="false" EmailRequired="false" TicketType="TicketOnly"><ProdMarketingName><![CDATA[<div id="DisplayName">OFFPEAK Ticket Only On Departure</div>]]></ProdMarketingName><PassengerTypePrices><PassengerMixSlice SliceID="1" Code="ALL" Quantity="1" UnitPrice="118.00" TSC="2.40" TotalSliceAmount="120.40" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB152B034D433E402319D
+4B8B8A3C8BF39D53AC14945C438394B8824B0B0A7232538B4092AE15C9194140
+D540C50696A65CB1B100BDED18244D000000
+}"><MixDetails><PassengerPlaceholder Age="-1"/></MixDetails></PassengerMixSlice></PassengerTypePrices><TotalPrice Fare="118.00" TSC="2.40" Amount="120.40" Commission="5.90" Net="114.50" ServiceFee="16.92455"/><OriginLocation LocationCode="7000021" Name="London Euston" Country="GB"/><DestinationLocation LocationCode="7000046" Name="Manchester Piccadilly" Country="GB"/><SubComponents/><IntegratedTotalPrice Fare="118.00" TSC="2.40" Amount="120.40" Commission="5.90" Net="114.50" ServiceFee="16.92455"/><IntegratedPassengerTypePrices><PassengerMixSlice SliceID="1" Code="ALL" Quantity="1" UnitPrice="118.00" TSC="2.40" TotalSliceAmount="120.40" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB152B034D433E402319D
+4B8B8A3C8BF39D53AC14945C438394B8824B0B0A7232538B4092AE15C9194140
+D540C50696A65CB1B100BDED18244D000000
+}"><MixDetails><PassengerPlaceholder Age="-1"/></MixDetails></PassengerMixSlice></IntegratedPassengerTypePrices><PossiblePlacePrefs><PossibleSpecialRequests><SpecialRequest>No preference</SpecialRequest><SpecialRequest>Quiet</SpecialRequest></PossibleSpecialRequests><PossibleCompartmentTypes/><PossiblePositions><Position>No Preference</Position><Position>Window</Position><Position>Aisle</Position></PossiblePositions></PossiblePlacePrefs><SalesConditions RefundPolicy="Tickets are non refundable, non exchangeable"><TermsAndConditions MustAcknowledge="true" URL="https://www.acpsecrets.com/railways-terms-and-conditions/TTL-tod-ow-nores-offpeak.html"/><RefundRules><RefundRule Sequence="1" DateBasis="Issue" WithinDateBasis="-PT24H" PenaltyRate="100.0" MinimumPenalty="0.0"/></RefundRules></SalesConditions></Fare><Fare FareReference="11" Class="First" IsEstimated="false" IsPreBookable="false" TicketingTimeLimit="2019-12-29T23:59:59.0Z" TicketCount="1" CurrencyCode="EUR" ItineraryType="One-Way-Outbound" IncludesProtectionPlan="false" ReservationRequired="true" ProductName="ANYTIME Ticket Only On Departure via:Travel is allowed via any permitted route." RouteDescription="Travel is allowed via any permitted route." FareType="Regular" Magic="21963E6F63B4E60B7A31F9E6682B4B51
+789C6D51CB6EC23010BCFB2B523827F2631D6C6EB6E34895684595F684720824
+AA52851811535121FEBD26AD2A40B57CB06777676677A72BB7FE6836FE215AA1
+7DB3EB6257BB9D6F5D3FCCA35589AABABE438A5DD7FA78B96F37CD3C9A5E55BF
+3A5F75FFE079B50F08A334C1E8B530F3882680D4D61D7A7F8121FC8CDB6EDB61
+081AF388A40941CFCD258645C250D1EC3F0367DE04121C28CA122DAB63D6F8AA
+ED6E858A2EE43D66812210D6217DA2168B0952EFA3A1DEF54D895E0E55EF5BFF
+75497AEB5BFFEBF7CEDDD8CA4877EBB3C87F74C3244ED3139A09693813D658C8
+8D020519B59C7010C2A65899CC686A66C4589A53AB09A70C33AA498619B31C87
+17921968A1856246E89CC98C33650848E0069860320405058D355633CA6890D2
+802555967023890482005B2ED29912294E65AA526E34D104E38C002322D0583C
+1E743EA3A7F6F8E77E159312C51B3784D6288884A3785D0D57738AEBF5D08DA3
+21371B8034A142527E59C378BF018DAE9F4640020000
+" UseAfterTL="2020-06-20" UseByTL="2020-06-19" TravelDate="2020-06-20" PaxUnits="1" PricingOnRequest="false" BookingOnRequest="false" TicketOption="ETK" PassportRequired="false" DateOfBirthRequired="false" PaxNameRequested="true" CntryResidenceRequired="false" NationalityRequired="false" PlaceOfBirthRequired="false" EmailRequired="false" TicketType="TicketOnly"><ProdMarketingName><![CDATA[<div id="DisplayName">ANYTIME Ticket Only On Departure</div>]]></ProdMarketingName><PassengerTypePrices><PassengerMixSlice SliceID="1" Code="ALL" Quantity="1" UnitPrice="322.00" TSC="2.40" TotalSliceAmount="324.40" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB1523032B1D033E502B1
+9D4B8B8A3C8BF39D53AC14945C438394B8824B0B0A7232538B4092AE15C91941
+40E5867A860696A65CB1B100D143185C4E000000
+}"><MixDetails><PassengerPlaceholder Age="-1"/></MixDetails></PassengerMixSlice></PassengerTypePrices><TotalPrice Fare="322.00" TSC="2.40" Amount="324.40" Commission="16.10" Net="308.30" ServiceFee="46.28925"/><OriginLocation LocationCode="7000021" Name="London Euston" Country="GB"/><DestinationLocation LocationCode="7000046" Name="Manchester Piccadilly" Country="GB"/><SubComponents/><IntegratedTotalPrice Fare="322.00" TSC="2.40" Amount="324.40" Commission="16.10" Net="308.30" ServiceFee="46.28925"/><IntegratedPassengerTypePrices><PassengerMixSlice SliceID="1" Code="ALL" Quantity="1" UnitPrice="322.00" TSC="2.40" TotalSliceAmount="324.40" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB1523032B1D033E502B1
+9D4B8B8A3C8BF39D53AC14945C438394B8824B0B0A7232538B4092AE15C91941
+40E5867A860696A65CB1B100D143185C4E000000
+}"><MixDetails><PassengerPlaceholder Age="-1"/></MixDetails></PassengerMixSlice></IntegratedPassengerTypePrices><PossiblePlacePrefs><PossibleSpecialRequests><SpecialRequest>No preference</SpecialRequest><SpecialRequest>Quiet</SpecialRequest></PossibleSpecialRequests><PossibleCompartmentTypes/><PossiblePositions><Position>No Preference</Position><Position>Window</Position><Position>Aisle</Position></PossiblePositions></PossiblePlacePrefs><SalesConditions RefundPolicy="Tickets are non refundable, non exchangeable"><TermsAndConditions MustAcknowledge="true" URL="https://www.acpsecrets.com/railways-terms-and-conditions/TTL-tod-ow-nores-anytime.html"/><RefundRules><RefundRule Sequence="1" DateBasis="Issue" WithinDateBasis="-PT24H" PenaltyRate="100.0" MinimumPenalty="0.0"/></RefundRules></SalesConditions></Fare><Fare FareReference="12" Class="Standard" IsEstimated="false" IsPreBookable="false" TicketingTimeLimit="2019-12-29T23:59:59.0Z" TicketCount="1" CurrencyCode="EUR" ItineraryType="One-Way-Outbound" IncludesProtectionPlan="false" ReservationRequired="true" ProductName="ANYTIME Ticket Only On Departure via:Travel is allowed via any permitted route." RouteDescription="Travel is allowed via any permitted route." FareType="Regular" Magic="41B9D950C9CB42D77F53CF225BD9E0BF
+789C6D515D6BC230147DCFAF70FA5CC9679BF896A4290CDC70747B923E545B46
+476DC4C6E110FFFB6EBB315416F27073EECD392727B3B5DF7CD4DBF03059A343
+BD6F235FF97D687CD72F26EB0295557587E4FBB609D1EAD06CEBC5647675FBD5
+87B2FD07CFCA032094F13946AFB98572CE91DEF9631706388693F5BB5DD3F7A0
+B19810324FD0733DF4288732AF0F9FC099D5408281A228D0AA3CA575289BF656
+286F61EE31050A20AC607CAA97CB29D2EFA3A1CE7775815E8E65179AF0350CBD
+754DF8F57BE76E7CCA4877EB33CF7E742189F3EC8C12A9AC60D259C733ABB9E6
+297582082EA58BB1B6A935D426C43A9A516788A00C1BCE708A1973185343904A
+B991466A66A5C9984A05D39670C585E54C32054D49B9C106EB84320A52866345
+B523C22AA23841143B916819E358C53A16D6104330B61963440ACA416658E872
+414FCDE9CFFB3A22058AB6BE87871139841A6DCAFE2AA5A8DAF4ED180CB9C91F
+52A26AF881717F038C189E323B020000
+" UseAfterTL="2020-06-20" UseByTL="2020-06-19" TravelDate="2020-06-20" PaxUnits="1" PricingOnRequest="false" BookingOnRequest="false" TicketOption="ETK" PassportRequired="false" DateOfBirthRequired="false" PaxNameRequested="true" CntryResidenceRequired="false" NationalityRequired="false" PlaceOfBirthRequired="false" EmailRequired="false" TicketType="TicketOnly"><ProdMarketingName><![CDATA[<div id="DisplayName">ANYTIME Ticket Only On Departure</div>]]></ProdMarketingName><PassengerTypePrices><PassengerMixSlice SliceID="1" Code="ALL" Quantity="1" UnitPrice="234.00" TSC="2.40" TotalSliceAmount="236.40" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB15230B430D033E002B1
+9D4B8B8A3C8BF39D53AC14945C438394B8824B0B0A7232538B4092AE15C91941
+20E57A860696A65CB1B100CF3318524E000000
+}"><MixDetails><PassengerPlaceholder Age="-1"/></MixDetails></PassengerMixSlice></PassengerTypePrices><TotalPrice Fare="234.00" TSC="2.40" Amount="236.40" Commission="11.70" Net="224.70" ServiceFee="34.29"/><OriginLocation LocationCode="7000021" Name="London Euston" Country="GB"/><DestinationLocation LocationCode="7000046" Name="Manchester Piccadilly" Country="GB"/><SubComponents/><IntegratedTotalPrice Fare="234.00" TSC="2.40" Amount="236.40" Commission="11.70" Net="224.70" ServiceFee="34.29"/><IntegratedPassengerTypePrices><PassengerMixSlice SliceID="1" Code="ALL" Quantity="1" UnitPrice="234.00" TSC="2.40" TotalSliceAmount="236.40" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB15230B430D033E002B1
+9D4B8B8A3C8BF39D53AC14945C438394B8824B0B0A7232538B4092AE15C91941
+20E57A860696A65CB1B100CF3318524E000000
+}"><MixDetails><PassengerPlaceholder Age="-1"/></MixDetails></PassengerMixSlice></IntegratedPassengerTypePrices><PossiblePlacePrefs><PossibleSpecialRequests><SpecialRequest>No preference</SpecialRequest><SpecialRequest>Quiet</SpecialRequest></PossibleSpecialRequests><PossibleCompartmentTypes/><PossiblePositions><Position>No Preference</Position><Position>Window</Position><Position>Aisle</Position></PossiblePositions></PossiblePlacePrefs><SalesConditions RefundPolicy="Tickets are non refundable, non exchangeable"><TermsAndConditions MustAcknowledge="true" URL="https://www.acpsecrets.com/railways-terms-and-conditions/TTL-tod-ow-nores-anytime.html"/><RefundRules><RefundRule Sequence="1" DateBasis="Issue" WithinDateBasis="-PT24H" PenaltyRate="100.0" MinimumPenalty="0.0"/></RefundRules></SalesConditions></Fare><Fare FareReference="13" Class="First" IsEstimated="false" IsPreBookable="false" TicketingTimeLimit="2019-12-29T23:59:59.0Z" TicketCount="1" CurrencyCode="EUR" ItineraryType="One-Way-Outbound" IncludesProtectionPlan="false" ReservationRequired="true" ProductName="OFFPEAK Ticket Only On Departure via:Travel is allowed via any permitted route." RouteDescription="Travel is allowed via any permitted route." FareType="Regular" Magic="E91E72B8A6CEF48417F5B23968393AA1
+789C6D51CB6AC33010BCEB2BD2E46CA3A72DE526C93214DA92E2F6147C706253
+5C1C2BC46A4909F9F7AEDD529250A18334DA9D991D2DD67EF3DE6CC3DD6C8D0E
+CDBE8B7CEDF7A1F5FDB09CAD4B54D5F50D52ECBB3644AB43BB6D96B3C545F78B
+0F55F70F9E570740284E628C5E0A0BC79823BDF31F7D18610937EB77BB761840
+6339233866E8A98137A2644C50D11C3E81336F8004034559A25575CC9A50B5DD
+B550D141DD7D068D405843F95C3F3CCC917E9B0CF5BE6F4AF4FC51F5A10D5F63
+D16BDF865FBF37EEA65126BA6B9F45FEA30B499C1627944A650593CE3A9E5BCD
+35CFA8134470295D82B5CDACA13625D6D19C3A43046598712332CE98C3981A82
+54C68D3452332B4DCE542698B6842B2E2C6792297894941B6CB04E29A3206538
+56543B22AC228A1344B113A996094E54A213610D3104E30CA79C482139C88C0B
+9DCFE8B13DFE795F47A444D1D60F63C842C1E4D1A61A2E528AEACDD04DC15CE7
+4F552CA412E31F4CFB1BC5589EA63D020000
+" UseAfterTL="2020-06-20" UseByTL="2020-06-19" TravelDate="2020-06-20" PaxUnits="1" PricingOnRequest="false" BookingOnRequest="false" TicketOption="ETK" PassportRequired="false" DateOfBirthRequired="false" PaxNameRequested="true" CntryResidenceRequired="false" NationalityRequired="false" PlaceOfBirthRequired="false" EmailRequired="false" TicketType="TicketOnly"><ProdMarketingName><![CDATA[<div id="DisplayName">OFFPEAK Ticket Only On Departure</div>]]></ProdMarketingName><PassengerTypePrices><PassengerMixSlice SliceID="1" Code="ALL" Quantity="1" UnitPrice="206.00" TSC="2.40" TotalSliceAmount="208.40" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB1523034B5D433E002B1
+9D4B8B8A3C8BF39D53AC14945C438394B8824B0B0A7232538B4092AE15C91941
+20E57A860696A65CB1B100D07418584E000000
+}"><MixDetails><PassengerPlaceholder Age="-1"/></MixDetails></PassengerMixSlice></PassengerTypePrices><TotalPrice Fare="206.00" TSC="2.40" Amount="208.40" Commission="10.30" Net="198.10" ServiceFee="29.5895"/><OriginLocation LocationCode="7000021" Name="London Euston" Country="GB"/><DestinationLocation LocationCode="7000046" Name="Manchester Piccadilly" Country="GB"/><SubComponents/><IntegratedTotalPrice Fare="206.00" TSC="2.40" Amount="208.40" Commission="10.30" Net="198.10" ServiceFee="29.5895"/><IntegratedPassengerTypePrices><PassengerMixSlice SliceID="1" Code="ALL" Quantity="1" UnitPrice="206.00" TSC="2.40" TotalSliceAmount="208.40" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB1523034B5D433E002B1
+9D4B8B8A3C8BF39D53AC14945C438394B8824B0B0A7232538B4092AE15C91941
+20E57A860696A65CB1B100D07418584E000000
+}"><MixDetails><PassengerPlaceholder Age="-1"/></MixDetails></PassengerMixSlice></IntegratedPassengerTypePrices><PossiblePlacePrefs><PossibleSpecialRequests><SpecialRequest>No preference</SpecialRequest><SpecialRequest>Quiet</SpecialRequest></PossibleSpecialRequests><PossibleCompartmentTypes/><PossiblePositions><Position>No Preference</Position><Position>Window</Position><Position>Aisle</Position></PossiblePositions></PossiblePlacePrefs><SalesConditions RefundPolicy="Tickets are non refundable, non exchangeable"><TermsAndConditions MustAcknowledge="true" URL="https://www.acpsecrets.com/railways-terms-and-conditions/TTL-tod-ow-nores-offpeak.html"/><RefundRules><RefundRule Sequence="1" DateBasis="Issue" WithinDateBasis="-PT24H" PenaltyRate="100.0" MinimumPenalty="0.0"/></RefundRules></SalesConditions></Fare><Fare FareReference="14" Class="Standard" IsEstimated="false" IsPreBookable="false" TicketingTimeLimit="2019-12-29T23:59:59.0Z" TicketCount="1" CurrencyCode="EUR" ItineraryType="One-Way-Outbound" IncludesProtectionPlan="false" ReservationRequired="true" ProductName="OFFPEAK Ticket Only On Departure via:Travel is allowed via any permitted route." RouteDescription="Travel is allowed via any permitted route." FareType="Regular" Magic="2DAB1661A738727674B24BE9E362BED1
+789C6D514D6BE33010BDEB57B8C9D946238D1C29377D190ADDA58BBBA7E08313
+9BE2E2582156972EA5FF7D15B72C4DA9D0456F66DE7BF3B4DE85FD537F8837D9
+8E9CFBD398872E9CE210A6799BED1AD276DD17A43E8D43CCEFCFC3A1DF66EB4F
+D30F21B6E33778D59E1302200B4A1E6ABBCD5881441FC3F31413CC687AD9703C
+0EF39C34B6992814F9D95F4A808520757FFE9328AB3E71D0C4D034E4BE7D717D
+6C87F15AA71E53DFAD4B8389AF4BED2B7D77B722FA71F13385A96FC8AFE7768A
+43FC7B69FA3D0DF1C3EE1773CB260BDDB5CDBA7AD74D41BCAE5FC9462A2BB8F4
+D66365356A74CC0B1028A52FA9B6CE1A6637603DAB98372098A11C1D72EE9132
+0ECA1134D248CDAD3415574E706D01150A8B5C72958A92A1A186EA0DE32C0919
+A48A690FC22A500848891348ADA0A52A7529AC0103941AE71DA449747439E4ED
+8DFC185EFE3BDFE5D090FC10E6B496820248BE6FE74F11E5DD7E1EDF53B90A1F
+CA423114E2F203CBFD071BB29E103A020000
+" UseAfterTL="2020-06-20" UseByTL="2020-06-19" TravelDate="2020-06-20" PaxUnits="1" PricingOnRequest="false" BookingOnRequest="false" TicketOption="ETK" PassportRequired="false" DateOfBirthRequired="false" PaxNameRequested="true" CntryResidenceRequired="false" NationalityRequired="false" PlaceOfBirthRequired="false" EmailRequired="false" TicketType="TicketOnly"><ProdMarketingName><![CDATA[<div id="DisplayName">OFFPEAK Ticket Only On Departure</div>]]></ProdMarketingName><PassengerTypePrices><PassengerMixSlice SliceID="1" Code="ALL" Quantity="1" UnitPrice="118.00" TSC="2.40" TotalSliceAmount="120.40" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB152B034D433E402319D
+4B8B8A3C8BF39D53AC14945C438394B8824B0B0A7232538B4092AE15C9194140
+D540C50696A65CB1B100BDED18244D000000
+}"><MixDetails><PassengerPlaceholder Age="-1"/></MixDetails></PassengerMixSlice></PassengerTypePrices><TotalPrice Fare="118.00" TSC="2.40" Amount="120.40" Commission="5.90" Net="114.50" ServiceFee="16.92455"/><OriginLocation LocationCode="7000021" Name="London Euston" Country="GB"/><DestinationLocation LocationCode="7000046" Name="Manchester Piccadilly" Country="GB"/><SubComponents/><IntegratedTotalPrice Fare="118.00" TSC="2.40" Amount="120.40" Commission="5.90" Net="114.50" ServiceFee="16.92455"/><IntegratedPassengerTypePrices><PassengerMixSlice SliceID="1" Code="ALL" Quantity="1" UnitPrice="118.00" TSC="2.40" TotalSliceAmount="120.40" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB152B034D433E402319D
+4B8B8A3C8BF39D53AC14945C438394B8824B0B0A7232538B4092AE15C9194140
+D540C50696A65CB1B100BDED18244D000000
+}"><MixDetails><PassengerPlaceholder Age="-1"/></MixDetails></PassengerMixSlice></IntegratedPassengerTypePrices><PossiblePlacePrefs><PossibleSpecialRequests><SpecialRequest>No preference</SpecialRequest><SpecialRequest>Quiet</SpecialRequest></PossibleSpecialRequests><PossibleCompartmentTypes/><PossiblePositions><Position>No Preference</Position><Position>Window</Position><Position>Aisle</Position></PossiblePositions></PossiblePlacePrefs><SalesConditions RefundPolicy="Tickets are non refundable, non exchangeable"><TermsAndConditions MustAcknowledge="true" URL="https://www.acpsecrets.com/railways-terms-and-conditions/TTL-tod-ow-nores-offpeak.html"/><RefundRules><RefundRule Sequence="1" DateBasis="Issue" WithinDateBasis="-PT24H" PenaltyRate="100.0" MinimumPenalty="0.0"/></RefundRules></SalesConditions></Fare><Fare FareReference="15" Class="First" IsEstimated="false" IsPreBookable="false" TicketingTimeLimit="2019-12-29T23:59:59.0Z" TicketCount="1" CurrencyCode="EUR" ItineraryType="One-Way-Outbound" IncludesProtectionPlan="false" ReservationRequired="true" ProductName="ANYTIME Ticket Only On Departure via:Travel is allowed via any permitted route." RouteDescription="Travel is allowed via any permitted route." FareType="Regular" Magic="21963E6F63B4E60B7A31F9E6682B4B51
+789C6D51CB6EC23010BCFB2B523827F2631D6C6EB6E34895684595F684720824
+AA52851811535121FEBD26AD2A40B57CB06777676677A72BB7FE6836FE215AA1
+7DB3EB6257BB9D6F5D3FCCA35589AABABE438A5DD7FA78B96F37CD3C9A5E55BF
+3A5F75FFE079B50F08A334C1E8B530F3882680D4D61D7A7F8121FC8CDB6EDB61
+081AF388A40941CFCD258645C250D1EC3F0367DE04121C28CA122DAB63D6F8AA
+ED6E858A2EE43D66812210D6217DA2168B0952EFA3A1DEF54D895E0E55EF5BFF
+75497AEB5BFFEBF7CEDDD8CA4877EBB3C87F74C3244ED3139A09693813D658C8
+8D020519B59C7010C2A65899CC686A66C4589A53AB09A70C33AA498619B31C87
+17921968A1856246E89CC98C33650848E0069860320405058D355633CA6890D2
+802555967023890482005B2ED29912294E65AA526E34D104E38C002322D0583C
+1E743EA3A7F6F8E77E159312C51B3784D6288884A3785D0D57738AEBF5D08DA3
+21371B8034A142527E59C378BF018DAE9F4640020000
+" UseAfterTL="2020-06-20" UseByTL="2020-06-19" TravelDate="2020-06-20" PaxUnits="1" PricingOnRequest="false" BookingOnRequest="false" TicketOption="ETK" PassportRequired="false" DateOfBirthRequired="false" PaxNameRequested="true" CntryResidenceRequired="false" NationalityRequired="false" PlaceOfBirthRequired="false" EmailRequired="false" TicketType="TicketOnly"><ProdMarketingName><![CDATA[<div id="DisplayName">ANYTIME Ticket Only On Departure</div>]]></ProdMarketingName><PassengerTypePrices><PassengerMixSlice SliceID="1" Code="ALL" Quantity="1" UnitPrice="322.00" TSC="2.40" TotalSliceAmount="324.40" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB1523032B1D033E502B1
+9D4B8B8A3C8BF39D53AC14945C438394B8824B0B0A7232538B4092AE15C91941
+40E5867A860696A65CB1B100D143185C4E000000
+}"><MixDetails><PassengerPlaceholder Age="-1"/></MixDetails></PassengerMixSlice></PassengerTypePrices><TotalPrice Fare="322.00" TSC="2.40" Amount="324.40" Commission="16.10" Net="308.30" ServiceFee="46.28925"/><OriginLocation LocationCode="7000021" Name="London Euston" Country="GB"/><DestinationLocation LocationCode="7000046" Name="Manchester Piccadilly" Country="GB"/><SubComponents/><IntegratedTotalPrice Fare="322.00" TSC="2.40" Amount="324.40" Commission="16.10" Net="308.30" ServiceFee="46.28925"/><IntegratedPassengerTypePrices><PassengerMixSlice SliceID="1" Code="ALL" Quantity="1" UnitPrice="322.00" TSC="2.40" TotalSliceAmount="324.40" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB1523032B1D033E502B1
+9D4B8B8A3C8BF39D53AC14945C438394B8824B0B0A7232538B4092AE15C91941
+40E5867A860696A65CB1B100D143185C4E000000
+}"><MixDetails><PassengerPlaceholder Age="-1"/></MixDetails></PassengerMixSlice></IntegratedPassengerTypePrices><PossiblePlacePrefs><PossibleSpecialRequests><SpecialRequest>No preference</SpecialRequest><SpecialRequest>Quiet</SpecialRequest></PossibleSpecialRequests><PossibleCompartmentTypes/><PossiblePositions><Position>No Preference</Position><Position>Window</Position><Position>Aisle</Position></PossiblePositions></PossiblePlacePrefs><SalesConditions RefundPolicy="Tickets are non refundable, non exchangeable"><TermsAndConditions MustAcknowledge="true" URL="https://www.acpsecrets.com/railways-terms-and-conditions/TTL-tod-ow-nores-anytime.html"/><RefundRules><RefundRule Sequence="1" DateBasis="Issue" WithinDateBasis="-PT24H" PenaltyRate="100.0" MinimumPenalty="0.0"/></RefundRules></SalesConditions></Fare><Fare FareReference="16" Class="Standard" IsEstimated="false" IsPreBookable="false" TicketingTimeLimit="2019-12-29T23:59:59.0Z" TicketCount="1" CurrencyCode="EUR" ItineraryType="One-Way-Outbound" IncludesProtectionPlan="false" ReservationRequired="true" ProductName="ANYTIME Ticket Only On Departure via:Travel is allowed via any permitted route." RouteDescription="Travel is allowed via any permitted route." FareType="Regular" Magic="41B9D950C9CB42D77F53CF225BD9E0BF
+789C6D515D6BC230147DCFAF70FA5CC9679BF896A4290CDC70747B923E545B46
+476DC4C6E110FFFB6EBB315416F27073EECD392727B3B5DF7CD4DBF03059A343
+BD6F235FF97D687CD72F26EB0295557587E4FBB609D1EAD06CEBC5647675FBD5
+87B2FD07CFCA032094F13946AFB98572CE91DEF9631706388693F5BB5DD3F7A0
+B19810324FD0733DF4288732AF0F9FC099D5408281A228D0AA3CA575289BF656
+286F61EE31050A20AC607CAA97CB29D2EFA3A1CE7775815E8E65179AF0350CBD
+754DF8F57BE76E7CCA4877EB33CF7E742189F3EC8C12A9AC60D259C733ABB9E6
+297582082EA58BB1B6A935D426C43A9A516788A00C1BCE708A1973185343904A
+B991466A66A5C9984A05D39670C585E54C32054D49B9C106EB84320A52866345
+B523C22AA23841143B916819E358C53A16D6104330B61963440ACA416658E872
+414FCDE9CFFB3A22058AB6BE87871139841A6DCAFE2AA5A8DAF4ED180CB9C91F
+52A26AF881717F038C189E323B020000
+" UseAfterTL="2020-06-20" UseByTL="2020-06-19" TravelDate="2020-06-20" PaxUnits="1" PricingOnRequest="false" BookingOnRequest="false" TicketOption="ETK" PassportRequired="false" DateOfBirthRequired="false" PaxNameRequested="true" CntryResidenceRequired="false" NationalityRequired="false" PlaceOfBirthRequired="false" EmailRequired="false" TicketType="TicketOnly"><ProdMarketingName><![CDATA[<div id="DisplayName">ANYTIME Ticket Only On Departure</div>]]></ProdMarketingName><PassengerTypePrices><PassengerMixSlice SliceID="1" Code="ALL" Quantity="1" UnitPrice="234.00" TSC="2.40" TotalSliceAmount="236.40" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB15230B430D033E002B1
+9D4B8B8A3C8BF39D53AC14945C438394B8824B0B0A7232538B4092AE15C91941
+20E57A860696A65CB1B100CF3318524E000000
+}"><MixDetails><PassengerPlaceholder Age="-1"/></MixDetails></PassengerMixSlice></PassengerTypePrices><TotalPrice Fare="234.00" TSC="2.40" Amount="236.40" Commission="11.70" Net="224.70" ServiceFee="34.29"/><OriginLocation LocationCode="7000021" Name="London Euston" Country="GB"/><DestinationLocation LocationCode="7000046" Name="Manchester Piccadilly" Country="GB"/><SubComponents/><IntegratedTotalPrice Fare="234.00" TSC="2.40" Amount="236.40" Commission="11.70" Net="224.70" ServiceFee="34.29"/><IntegratedPassengerTypePrices><PassengerMixSlice SliceID="1" Code="ALL" Quantity="1" UnitPrice="234.00" TSC="2.40" TotalSliceAmount="236.40" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB15230B430D033E002B1
+9D4B8B8A3C8BF39D53AC14945C438394B8824B0B0A7232538B4092AE15C91941
+20E57A860696A65CB1B100CF3318524E000000
+}"><MixDetails><PassengerPlaceholder Age="-1"/></MixDetails></PassengerMixSlice></IntegratedPassengerTypePrices><PossiblePlacePrefs><PossibleSpecialRequests><SpecialRequest>No preference</SpecialRequest><SpecialRequest>Quiet</SpecialRequest></PossibleSpecialRequests><PossibleCompartmentTypes/><PossiblePositions><Position>No Preference</Position><Position>Window</Position><Position>Aisle</Position></PossiblePositions></PossiblePlacePrefs><SalesConditions RefundPolicy="Tickets are non refundable, non exchangeable"><TermsAndConditions MustAcknowledge="true" URL="https://www.acpsecrets.com/railways-terms-and-conditions/TTL-tod-ow-nores-anytime.html"/><RefundRules><RefundRule Sequence="1" DateBasis="Issue" WithinDateBasis="-PT24H" PenaltyRate="100.0" MinimumPenalty="0.0"/></RefundRules></SalesConditions></Fare><Fare FareReference="17" Class="First" IsEstimated="false" IsPreBookable="false" TicketingTimeLimit="2019-12-29T23:59:59.0Z" TicketCount="1" CurrencyCode="EUR" ItineraryType="One-Way-Outbound" IncludesProtectionPlan="false" ReservationRequired="true" ProductName="OFFPEAK Ticket Only On Departure via:Travel is allowed via any permitted route." RouteDescription="Travel is allowed via any permitted route." FareType="Regular" Magic="E91E72B8A6CEF48417F5B23968393AA1
+789C6D51CB6AC33010BCEB2BD2E46CA3A72DE526C93214DA92E2F6147C706253
+5C1C2BC46A4909F9F7AEDD529250A18334DA9D991D2DD67EF3DE6CC3DD6C8D0E
+CDBE8B7CEDF7A1F5FDB09CAD4B54D5F50D52ECBB3644AB43BB6D96B3C545F78B
+0F55F70F9E570740284E628C5E0A0BC79823BDF31F7D18610937EB77BB761840
+6339233866E8A98137A2644C50D11C3E81336F8004034559A25575CC9A50B5DD
+B550D141DD7D068D405843F95C3F3CCC917E9B0CF5BE6F4AF4FC51F5A10D5F63
+D16BDF865FBF37EEA65126BA6B9F45FEA30B499C1627944A650593CE3A9E5BCD
+35CFA8134470295D82B5CDACA13625D6D19C3A43046598712332CE98C3981A82
+54C68D3452332B4DCE542698B6842B2E2C6792297894941B6CB04E29A3206538
+56543B22AC228A1344B113A996094E54A213610D3104E30CA79C482139C88C0B
+9DCFE8B13DFE795F47A444D1D60F63C842C1E4D1A61A2E528AEACDD04DC15CE7
+4F552CA412E31F4CFB1BC5589EA63D020000
+" UseAfterTL="2020-06-20" UseByTL="2020-06-19" TravelDate="2020-06-20" PaxUnits="1" PricingOnRequest="false" BookingOnRequest="false" TicketOption="ETK" PassportRequired="false" DateOfBirthRequired="false" PaxNameRequested="true" CntryResidenceRequired="false" NationalityRequired="false" PlaceOfBirthRequired="false" EmailRequired="false" TicketType="TicketOnly"><ProdMarketingName><![CDATA[<div id="DisplayName">OFFPEAK Ticket Only On Departure</div>]]></ProdMarketingName><PassengerTypePrices><PassengerMixSlice SliceID="1" Code="ALL" Quantity="1" UnitPrice="206.00" TSC="2.40" TotalSliceAmount="208.40" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB1523034B5D433E002B1
+9D4B8B8A3C8BF39D53AC14945C438394B8824B0B0A7232538B4092AE15C91941
+20E57A860696A65CB1B100D07418584E000000
+}"><MixDetails><PassengerPlaceholder Age="-1"/></MixDetails></PassengerMixSlice></PassengerTypePrices><TotalPrice Fare="206.00" TSC="2.40" Amount="208.40" Commission="10.30" Net="198.10" ServiceFee="29.5895"/><OriginLocation LocationCode="7000021" Name="London Euston" Country="GB"/><DestinationLocation LocationCode="7000046" Name="Manchester Piccadilly" Country="GB"/><SubComponents/><IntegratedTotalPrice Fare="206.00" TSC="2.40" Amount="208.40" Commission="10.30" Net="198.10" ServiceFee="29.5895"/><IntegratedPassengerTypePrices><PassengerMixSlice SliceID="1" Code="ALL" Quantity="1" UnitPrice="206.00" TSC="2.40" TotalSliceAmount="208.40" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB1523034B5D433E002B1
+9D4B8B8A3C8BF39D53AC14945C438394B8824B0B0A7232538B4092AE15C91941
+20E57A860696A65CB1B100D07418584E000000
+}"><MixDetails><PassengerPlaceholder Age="-1"/></MixDetails></PassengerMixSlice></IntegratedPassengerTypePrices><PossiblePlacePrefs><PossibleSpecialRequests><SpecialRequest>No preference</SpecialRequest><SpecialRequest>Quiet</SpecialRequest></PossibleSpecialRequests><PossibleCompartmentTypes/><PossiblePositions><Position>No Preference</Position><Position>Window</Position><Position>Aisle</Position></PossiblePositions></PossiblePlacePrefs><SalesConditions RefundPolicy="Tickets are non refundable, non exchangeable"><TermsAndConditions MustAcknowledge="true" URL="https://www.acpsecrets.com/railways-terms-and-conditions/TTL-tod-ow-nores-offpeak.html"/><RefundRules><RefundRule Sequence="1" DateBasis="Issue" WithinDateBasis="-PT24H" PenaltyRate="100.0" MinimumPenalty="0.0"/></RefundRules></SalesConditions></Fare><Fare FareReference="18" Class="Standard" IsEstimated="false" IsPreBookable="false" TicketingTimeLimit="2019-12-29T23:59:59.0Z" TicketCount="1" CurrencyCode="EUR" ItineraryType="One-Way-Outbound" IncludesProtectionPlan="false" ReservationRequired="true" ProductName="OFFPEAK Ticket Only On Departure via:Travel is allowed via any permitted route." RouteDescription="Travel is allowed via any permitted route." FareType="Regular" Magic="2DAB1661A738727674B24BE9E362BED1
+789C6D514D6BE33010BDEB57B8C9D946238D1C29377D190ADDA58BBBA7E08313
+9BE2E2582156972EA5FF7D15B72C4DA9D0456F66DE7BF3B4DE85FD537F8837D9
+8E9CFBD398872E9CE210A6799BED1AD276DD17A43E8D43CCEFCFC3A1DF66EB4F
+D30F21B6E33778D59E1302200B4A1E6ABBCD5881441FC3F31413CC687AD9703C
+0EF39C34B6992814F9D95F4A808520757FFE9328AB3E71D0C4D034E4BE7D717D
+6C87F15AA71E53DFAD4B8389AF4BED2B7D77B722FA71F13385A96FC8AFE7768A
+43FC7B69FA3D0DF1C3EE1773CB260BDDB5CDBA7AD74D41BCAE5FC9462A2BB8F4
+D66365356A74CC0B1028A52FA9B6CE1A6637603DAB98372098A11C1D72EE9132
+0ECA1134D248CDAD3415574E706D01150A8B5C72958A92A1A186EA0DE32C0919
+A48A690FC22A500848891348ADA0A52A7529AC0103941AE71DA449747439E4ED
+8DFC185EFE3BDFE5D090FC10E6B496820248BE6FE74F11E5DD7E1EDF53B90A1F
+CA423114E2F203CBFD071BB29E103A020000
+" UseAfterTL="2020-06-20" UseByTL="2020-06-19" TravelDate="2020-06-20" PaxUnits="1" PricingOnRequest="false" BookingOnRequest="false" TicketOption="ETK" PassportRequired="false" DateOfBirthRequired="false" PaxNameRequested="true" CntryResidenceRequired="false" NationalityRequired="false" PlaceOfBirthRequired="false" EmailRequired="false" TicketType="TicketOnly"><ProdMarketingName><![CDATA[<div id="DisplayName">OFFPEAK Ticket Only On Departure</div>]]></ProdMarketingName><PassengerTypePrices><PassengerMixSlice SliceID="1" Code="ALL" Quantity="1" UnitPrice="118.00" TSC="2.40" TotalSliceAmount="120.40" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB152B034D433E402319D
+4B8B8A3C8BF39D53AC14945C438394B8824B0B0A7232538B4092AE15C9194140
+D540C50696A65CB1B100BDED18244D000000
+}"><MixDetails><PassengerPlaceholder Age="-1"/></MixDetails></PassengerMixSlice></PassengerTypePrices><TotalPrice Fare="118.00" TSC="2.40" Amount="120.40" Commission="5.90" Net="114.50" ServiceFee="16.92455"/><OriginLocation LocationCode="7000021" Name="London Euston" Country="GB"/><DestinationLocation LocationCode="7000046" Name="Manchester Piccadilly" Country="GB"/><SubComponents/><IntegratedTotalPrice Fare="118.00" TSC="2.40" Amount="120.40" Commission="5.90" Net="114.50" ServiceFee="16.92455"/><IntegratedPassengerTypePrices><PassengerMixSlice SliceID="1" Code="ALL" Quantity="1" UnitPrice="118.00" TSC="2.40" TotalSliceAmount="120.40" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB152B034D433E402319D
+4B8B8A3C8BF39D53AC14945C438394B8824B0B0A7232538B4092AE15C9194140
+D540C50696A65CB1B100BDED18244D000000
+}"><MixDetails><PassengerPlaceholder Age="-1"/></MixDetails></PassengerMixSlice></IntegratedPassengerTypePrices><PossiblePlacePrefs><PossibleSpecialRequests><SpecialRequest>No preference</SpecialRequest><SpecialRequest>Quiet</SpecialRequest></PossibleSpecialRequests><PossibleCompartmentTypes/><PossiblePositions><Position>No Preference</Position><Position>Window</Position><Position>Aisle</Position></PossiblePositions></PossiblePlacePrefs><SalesConditions RefundPolicy="Tickets are non refundable, non exchangeable"><TermsAndConditions MustAcknowledge="true" URL="https://www.acpsecrets.com/railways-terms-and-conditions/TTL-tod-ow-nores-offpeak.html"/><RefundRules><RefundRule Sequence="1" DateBasis="Issue" WithinDateBasis="-PT24H" PenaltyRate="100.0" MinimumPenalty="0.0"/></RefundRules></SalesConditions></Fare><Fare FareReference="19" Class="First" IsEstimated="false" IsPreBookable="false" TicketingTimeLimit="2019-12-29T23:59:59.0Z" TicketCount="1" CurrencyCode="EUR" ItineraryType="One-Way-Outbound" IncludesProtectionPlan="false" ReservationRequired="true" ProductName="ANYTIME Ticket Only On Departure via:Travel is allowed via any permitted route." RouteDescription="Travel is allowed via any permitted route." FareType="Regular" Magic="21963E6F63B4E60B7A31F9E6682B4B51
+789C6D51CB6EC23010BCFB2B523827F2631D6C6EB6E34895684595F684720824
+AA52851811535121FEBD26AD2A40B57CB06777676677A72BB7FE6836FE215AA1
+7DB3EB6257BB9D6F5D3FCCA35589AABABE438A5DD7FA78B96F37CD3C9A5E55BF
+3A5F75FFE079B50F08A334C1E8B530F3882680D4D61D7A7F8121FC8CDB6EDB61
+081AF388A40941CFCD258645C250D1EC3F0367DE04121C28CA122DAB63D6F8AA
+ED6E858A2EE43D66812210D6217DA2168B0952EFA3A1DEF54D895E0E55EF5BFF
+75497AEB5BFFEBF7CEDDD8CA4877EBB3C87F74C3244ED3139A09693813D658C8
+8D020519B59C7010C2A65899CC686A66C4589A53AB09A70C33AA498619B31C87
+17921968A1856246E89CC98C33650848E0069860320405058D355633CA6890D2
+802555967023890482005B2ED29912294E65AA526E34D104E38C002322D0583C
+1E743EA3A7F6F8E77E159312C51B3784D6288884A3785D0D57738AEBF5D08DA3
+21371B8034A142527E59C378BF018DAE9F4640020000
+" UseAfterTL="2020-06-20" UseByTL="2020-06-19" TravelDate="2020-06-20" PaxUnits="1" PricingOnRequest="false" BookingOnRequest="false" TicketOption="ETK" PassportRequired="false" DateOfBirthRequired="false" PaxNameRequested="true" CntryResidenceRequired="false" NationalityRequired="false" PlaceOfBirthRequired="false" EmailRequired="false" TicketType="TicketOnly"><ProdMarketingName><![CDATA[<div id="DisplayName">ANYTIME Ticket Only On Departure</div>]]></ProdMarketingName><PassengerTypePrices><PassengerMixSlice SliceID="1" Code="ALL" Quantity="1" UnitPrice="322.00" TSC="2.40" TotalSliceAmount="324.40" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB1523032B1D033E502B1
+9D4B8B8A3C8BF39D53AC14945C438394B8824B0B0A7232538B4092AE15C91941
+40E5867A860696A65CB1B100D143185C4E000000
+}"><MixDetails><PassengerPlaceholder Age="-1"/></MixDetails></PassengerMixSlice></PassengerTypePrices><TotalPrice Fare="322.00" TSC="2.40" Amount="324.40" Commission="16.10" Net="308.30" ServiceFee="46.28925"/><OriginLocation LocationCode="7000021" Name="London Euston" Country="GB"/><DestinationLocation LocationCode="7000046" Name="Manchester Piccadilly" Country="GB"/><SubComponents/><IntegratedTotalPrice Fare="322.00" TSC="2.40" Amount="324.40" Commission="16.10" Net="308.30" ServiceFee="46.28925"/><IntegratedPassengerTypePrices><PassengerMixSlice SliceID="1" Code="ALL" Quantity="1" UnitPrice="322.00" TSC="2.40" TotalSliceAmount="324.40" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB1523032B1D033E502B1
+9D4B8B8A3C8BF39D53AC14945C438394B8824B0B0A7232538B4092AE15C91941
+40E5867A860696A65CB1B100D143185C4E000000
+}"><MixDetails><PassengerPlaceholder Age="-1"/></MixDetails></PassengerMixSlice></IntegratedPassengerTypePrices><PossiblePlacePrefs><PossibleSpecialRequests><SpecialRequest>No preference</SpecialRequest><SpecialRequest>Quiet</SpecialRequest></PossibleSpecialRequests><PossibleCompartmentTypes/><PossiblePositions><Position>No Preference</Position><Position>Window</Position><Position>Aisle</Position></PossiblePositions></PossiblePlacePrefs><SalesConditions RefundPolicy="Tickets are non refundable, non exchangeable"><TermsAndConditions MustAcknowledge="true" URL="https://www.acpsecrets.com/railways-terms-and-conditions/TTL-tod-ow-nores-anytime.html"/><RefundRules><RefundRule Sequence="1" DateBasis="Issue" WithinDateBasis="-PT24H" PenaltyRate="100.0" MinimumPenalty="0.0"/></RefundRules></SalesConditions></Fare><Fare FareReference="20" Class="Standard" IsEstimated="false" IsPreBookable="false" TicketingTimeLimit="2019-12-29T23:59:59.0Z" TicketCount="1" CurrencyCode="EUR" ItineraryType="One-Way-Outbound" IncludesProtectionPlan="false" ReservationRequired="true" ProductName="ANYTIME Ticket Only On Departure via:Travel is allowed via any permitted route." RouteDescription="Travel is allowed via any permitted route." FareType="Regular" Magic="41B9D950C9CB42D77F53CF225BD9E0BF
+789C6D515D6BC230147DCFAF70FA5CC9679BF896A4290CDC70747B923E545B46
+476DC4C6E110FFFB6EBB315416F27073EECD392727B3B5DF7CD4DBF03059A343
+BD6F235FF97D687CD72F26EB0295557587E4FBB609D1EAD06CEBC5647675FBD5
+87B2FD07CFCA032094F13946AFB98572CE91DEF9631706388693F5BB5DD3F7A0
+B19810324FD0733DF4288732AF0F9FC099D5408281A228D0AA3CA575289BF656
+286F61EE31050A20AC607CAA97CB29D2EFA3A1CE7775815E8E65179AF0350CBD
+754DF8F57BE76E7CCA4877EB33CF7E742189F3EC8C12A9AC60D259C733ABB9E6
+297582082EA58BB1B6A935D426C43A9A516788A00C1BCE708A1973185343904A
+B991466A66A5C9984A05D39670C585E54C32054D49B9C106EB84320A52866345
+B523C22AA23841143B916819E358C53A16D6104330B61963440ACA416658E872
+414FCDE9CFFB3A22058AB6BE87871139841A6DCAFE2AA5A8DAF4ED180CB9C91F
+52A26AF881717F038C189E323B020000
+" UseAfterTL="2020-06-20" UseByTL="2020-06-19" TravelDate="2020-06-20" PaxUnits="1" PricingOnRequest="false" BookingOnRequest="false" TicketOption="ETK" PassportRequired="false" DateOfBirthRequired="false" PaxNameRequested="true" CntryResidenceRequired="false" NationalityRequired="false" PlaceOfBirthRequired="false" EmailRequired="false" TicketType="TicketOnly"><ProdMarketingName><![CDATA[<div id="DisplayName">ANYTIME Ticket Only On Departure</div>]]></ProdMarketingName><PassengerTypePrices><PassengerMixSlice SliceID="1" Code="ALL" Quantity="1" UnitPrice="234.00" TSC="2.40" TotalSliceAmount="236.40" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB15230B430D033E002B1
+9D4B8B8A3C8BF39D53AC14945C438394B8824B0B0A7232538B4092AE15C91941
+20E57A860696A65CB1B100CF3318524E000000
+}"><MixDetails><PassengerPlaceholder Age="-1"/></MixDetails></PassengerMixSlice></PassengerTypePrices><TotalPrice Fare="234.00" TSC="2.40" Amount="236.40" Commission="11.70" Net="224.70" ServiceFee="34.29"/><OriginLocation LocationCode="7000021" Name="London Euston" Country="GB"/><DestinationLocation LocationCode="7000046" Name="Manchester Piccadilly" Country="GB"/><SubComponents/><IntegratedTotalPrice Fare="234.00" TSC="2.40" Amount="236.40" Commission="11.70" Net="224.70" ServiceFee="34.29"/><IntegratedPassengerTypePrices><PassengerMixSlice SliceID="1" Code="ALL" Quantity="1" UnitPrice="234.00" TSC="2.40" TotalSliceAmount="236.40" SFDetails="#{
+789C538ECE4FCA4A4D2E515488E60ACDCB2C71CE2F2EB15230B430D033E002B1
+9D4B8B8A3C8BF39D53AC14945C438394B8824B0B0A7232538B4092AE15C91941
+20E57A860696A65CB1B100CF3318524E000000
+}"><MixDetails><PassengerPlaceholder Age="-1"/></MixDetails></PassengerMixSlice></IntegratedPassengerTypePrices><PossiblePlacePrefs><PossibleSpecialRequests><SpecialRequest>No preference</SpecialRequest><SpecialRequest>Quiet</SpecialRequest></PossibleSpecialRequests><PossibleCompartmentTypes/><PossiblePositions><Position>No Preference</Position><Position>Window</Position><Position>Aisle</Position></PossiblePositions></PossiblePlacePrefs><SalesConditions RefundPolicy="Tickets are non refundable, non exchangeable"><TermsAndConditions MustAcknowledge="true" URL="https://www.acpsecrets.com/railways-terms-and-conditions/TTL-tod-ow-nores-anytime.html"/><RefundRules><RefundRule Sequence="1" DateBasis="Issue" WithinDateBasis="-PT24H" PenaltyRate="100.0" MinimumPenalty="0.0"/></RefundRules></SalesConditions></Fare></Fares><CountryLists/></ACP_RailAvailRS>

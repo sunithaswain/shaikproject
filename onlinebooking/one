@@ -1,0 +1,24 @@
+import sys, requests
+def createapi(org_id):
+
+    # print(sys.argv[0],sys.argv[1])
+    org_id=sys.argv[1]
+    api_key="5676583ba9b99ee858861c356deee5bc92949ad8"
+    apiurl="https://api.meraki.com/api/v0"
+    sample_url = "https://api.meraki.com/api/v0/organizations"
+    headers = {"X-Cisco-Meraki-API-Key":api_key, "Content-Type":"application/json"}
+    print(org_id,"##############")
+
+    #write your code here
+    data = requests.get(url=sample_url,headers=headers)
+    
+    # newdat=data.json()
+    # print(newdat)
+    print(data.url, data.status_code, data.text)
+
+    return org_id
+
+
+if __name__ == "__main__":
+    createapi(sys.argv[1])
+

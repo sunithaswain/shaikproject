@@ -1,0 +1,201 @@
+/* Styles for jQuery menu widget
+Author:	Maggie Wachs, maggie@filamentgroup.com
+Date:		September 2008
+*/
+.navbar {margin-bottom: 0;}
+
+.hidden { position:absolute; top:0; left:-9999px; width:1px; height:1px; overflow:hidden; }
+	
+.fg-button { clear:left; margin:5px 0px 0px 0px; padding: .4em 1em; text-decoration:none !important; cursor:pointer; position: relative; text-align: center; zoom: 1; }
+.fg-button .glyphicon { position: absolute; top: 50%; margin-top: -8px; left: 50%; margin-left: -8px; }
+a.fg-button { float:left;  }
+button.fg-button { width:auto; overflow:visible; } /* removes extra button width in IE */
+/*.fg-button:hover{
+color:red;*/
+}
+.fg-button-icon-left { padding-left: 2.1em; }
+.fg-button-icon-right { padding-right: 2.1em; }
+	
+.fg-button-icon-left .glyphicon { right: auto; left: .2em; margin-left: 0; }
+.fg-button-icon-right .glyphicon { left: auto; right: .2em; margin-left: 0; }
+.fg-button-icon-solo { display:block; width:8px; text-indent: -9999px; }	
+/* REQUIRED STYLES - the menus will only render correctly with these rules */	
+
+.fg-menu-container { position: absolute; top:0; left:-999px; padding: .4em;  overflow: hidden; }
+.fg-menu-container.fg-menu-flyout { overflow: visible; }
+
+
+.fg-menu-container a:link,
+.fg-menu-container a:visited, 
+.fg-menu-container a:hover,
+.fg-menu-container a:active { color:#333; }
+
+.fg-menu, .fg-menu ul { list-style-type:none; padding: 0; margin:0; }
+
+.fg-menu { position:relative; }
+.fg-menu-flyout .fg-menu { position:static; }
+
+.fg-menu ul { position:absolute; top:0; }
+.fg-menu ul ul { top:-1px; }
+
+.fg-menu-container.fg-menu-ipod .fg-menu-content, 
+.fg-menu-container.fg-menu-ipod .fg-menu-content ul { background: none !important; }
+
+.fg-menu.fg-menu-scroll,
+.fg-menu ul.fg-menu-scroll { overflow: scroll;  overflow-x: hidden; }
+
+.fg-menu li { clear:both; float:left; width:100%; margin: 0; padding:0; border: 0; }	
+.fg-menu li li {  } /* inner li font size must be reset so that they don't blow up */
+
+.fg-menu-flyout ul ul { padding: .4em; }
+.fg-menu-flyout li { position:relative; }
+
+.fg-menu-scroll { overflow: scroll; overflow-x: hidden; }
+
+.fg-menu-breadcrumb { margin: 0; padding: 0; }
+
+.fg-menu-footer {  margin-top: .4em; padding: .4em; }
+/*.fg-menu-header {  margin-bottom: .4em; padding: .4em;  height: 30px; background-color: #eeeeee; font-weight:bold;}*/
+.fg-menu-header {  margin-bottom: .4em; padding-top: 5px; padding-left: 5px; background-color: #eeeeee; font-weight:bold; height:auto;}
+
+.fg-menu-breadcrumb::after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.fg-menu-breadcrumb li { float: left; list-style: none; margin: 0; padding: 0 .2em; opacity: .7; }
+.fg-menu-breadcrumb li.fg-menu-prev-list,
+.fg-menu-breadcrumb li.fg-menu-current-crumb { float: none; opacity: 1;  clear:left;}
+.fg-menu-breadcrumb li.fg-menu-current-crumb { padding-top: .2em; }
+
+.fg-menu-breadcrumb a, 
+.fg-menu-breadcrumb span { float: left; }
+
+.fg-menu-footer a:link,
+.fg-menu-footer a:visited { float:left; width:100%; text-decoration: none; }
+.fg-menu-footer a:hover,
+.fg-menu-footer a:active {  }
+
+.fg-menu-footer a span { float:left; cursor: pointer; }
+
+.fg-menu-breadcrumb .fg-menu-prev-list a:link,
+.fg-menu-breadcrumb .fg-menu-prev-list a:visited,
+.fg-menu-breadcrumb .fg-menu-prev-list a:hover,
+.fg-menu-breadcrumb .fg-menu-prev-list a:active { background-image: none; text-decoration:none; }
+	
+.fg-menu-breadcrumb .fg-menu-prev-list a { float: left; padding-right: .4em; }
+.fg-menu-breadcrumb .fg-menu-prev-list a .ui-icon { float: left; }
+	
+.fg-menu-breadcrumb .fg-menu-current-crumb a:link,
+.fg-menu-breadcrumb .fg-menu-current-crumb a:visited,
+.fg-menu-breadcrumb .fg-menu-current-crumb a:hover,
+.fg-menu-breadcrumb .fg-menu-current-crumb a:active { display:block; background-image:none; text-decoration:none; padding: 0 0 5px 0;}
+
+
+
+/* REQUIRED LINK STYLES: links are "display:block" by default; if the menu options are split into 
+	selectable node links and 'next' links, the script floats the node links left and floats the 'next' links to the right	*/
+
+.fg-menu a:link,
+.fg-menu a:visited,
+.fg-menu a:hover,
+.fg-menu a:active { float:left; width:100%; padding:.3em 3%; text-decoration:none; outline: 0 !important; }
+
+.fg-menu a { border: 1px dashed transparent; }
+
+.fg-menu a.ui-state-default:link,
+.fg-menu a.ui-state-default:visited,
+.fg-menu a.ui-state-default:hover,
+.fg-menu a.ui-state-default:active,
+.fg-menu a.ui-state-hover:link,
+.fg-menu a.ui-state-hover:visited,
+.fg-menu a.ui-state-hover:hover,
+.fg-menu a.ui-state-hover:active,
+ .fg-menu a.ui-state-active:link,
+ .fg-menu a.ui-state-active:visited,
+ .fg-menu a.ui-state-active:hover,
+.fg-menu a.ui-state-active:active { border-style: solid; font-weight: normal; }
+
+
+.li-hover:hover{
+    background: #f6f6f6;
+    /*border: 1px solid #dddddd;*/
+    color: #369746;
+    
+}
+
+
+
+.fg-menu a span { display:block; cursor:pointer; }
+
+
+ /* SUGGESTED STYLES - for use with jQuery UI Themeroller CSS */	
+ 
+.fg-menu-indicator span { float:left; }
+.fg-menu-indicator span.glyphicon { float:right; }
+
+.fg-menu-content.ui-widget-content, 
+.fg-menu-content ul.ui-widget-content { border:0; }
+
+
+/* ICONS AND DIVIDERS */
+
+.fg-menu.fg-menu-has-icons a:link,
+.fg-menu.fg-menu-has-icons a:visited,
+element.style {
+    bottom: auto;
+    display: block;
+    left: 0;
+    right: auto;
+    top: 32px;
+    width: 180px;
+}
+*::after, *::before {
+    box-sizing: border-box;
+}
+*::after, *::before {
+    box-sizing: border-box;
+}
+.fg-menu-container {
+    left: -999px;
+    overflow: hidden;
+    padding: 0.4em;
+    position: absolute;
+    top: 0;
+}
+.dropdown-menu {
+    background-clip: padding-box;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
+    display: none;
+    float: left;
+    font-size: 12px;
+    left: 0;
+    list-style: outside none none;
+    margin: 2px 0 0;
+    min-width: 160px;
+    padding: 5px 0;
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    z-index: 1000;
+}
+* {
+    box-sizing: border-box;
+}
+.fg-menu.fg-menu-has-icons a:hover,
+.fg-menu.fg-menu-has-icons a:active { padding-left:20px; }
+
+.fg-menu .horizontal-divider hr, .fg-menu .horizontal-divider span { padding:0; margin:5px .6em; }
+.fg-menu .horizontal-divider hr { border:0; height:1px; }
+.fg-menu .horizontal-divider span { text-transform: uppercase; padding-left:.2em; }
+
+.rounded-border{
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>Detailed - Summary</title>
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="{{ STATIC_URL }}/material/css/jquery.datetimepicker.b805db3bb426.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/css/portal.c2bfd6b9cc10.css">
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/css/styles.css">
+<link rel="stylesheet" href="{{ STATIC_URL }}/css/bootstrap.min.css">
+<script src="{{ STATIC_URL }}/js/jquery.min.js"></script>
+<script src="{{ STATIC_URL }}/js/bootstrap.min.js"></script>
+<link href="{{ STATIC_URL }}/material/css/jquery.datetimepicker.b805db3bb426.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/css/datepicker.css">
+<script type="text/javascript" src="{{ STATIC_URL }}/js/bootstrap-datepicker.js"></script>
+<style>
+.h4, .h5, .h6, h4, h5, h6 {
+    margin-top: 0px !important;
+    margin-bottom: 2px !important;
+}
+
+</style>
+</head>
+<body>
+<main>
+  <div class="container">
+    <div class="row" id="content">
+      <h3> Items in Your Cart </h3>
+
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="row">
+              <div class="col-xs-12 col-sm-10 col-xs-10">
+                <h4> Booking Summary </h4>
+              </div>
+            </div>
+          </div>
+          <div class="panel-body">
+            <!-- A PRODUCT -->
+            <div class="row" style="line-height:50px;">
+              <div class="col-md-12 col-xs-12">
+
+                <table class="table table-bordered">
+                  <tr>
+                    <td width="40%;"><b> Your Reference:</td>
+                    <td>123456</td>
+                  </tr>
+
+
+                  <tr>
+                    <td><b>Ticket Delivery Address</td>
+                    <td>Address1, Address2</td>
+                  </tr>
+				  <tr>
+                    <td><b>Notes</td>
+                    <td class="text-justify">The Interrail One Country Pass is a great choice if you want to focus on one European country only.</td>
+                  </tr>
+                </table>
+
+              </div>
+            </div>
+
+
+
+
+          </div>
+        </div>
+
+    <!-- Product Details Start  -->
+    {% for pro in cartProducts%}
+      {% for product in pro %}
+		<div class="panel panel-default">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col-xs-8 col-sm-8">
+                    <strong>
+                      <div id="DisplayName">{{product.from_station}} - {{product.to_station}}</div>
+
+                    </strong>
+                  </div>
+                  <div class="col-xs-4 col-sm-4 text-right">
+
+                  £ {{product.netprice}}&nbsp;
+				  <span class="glyphicon glyphicon-trash" style="cursor:pointer;"></span>
+                </div>
+              </div>
+              </div>
+              <div class="panel-body">
+                <!-- A PRODUCT -->
+                <div class="row">
+                  <!-- PRODUCT DETAILS -->
+                  <div class="col-md-12">
+                   <table class="table table-bordered">
+
+                  <tr>
+                    <td><b> Departure</td>
+                    <td>{{product.departure_date}}</td>
+
+                    <td><b>Arrival</td>
+                    <!-- <td>2019-01-16 10:05</td> -->
+                    <td>{{product.arrival_date}}</td>
+                    
+
+                  </tr>
+                  <tr>
+                    <td><b>Class</td>
+                    <td colspan="3">{{product.train_category}}</td>
+                  </tr>
+				  <tr>
+				  <td colspan="2"><b> Sales Conditions</td>
+                    <td colspan="2">Non-Refundable</td>
+					</tr>
+                </table>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+        {% endfor %}
+        {% endfor %}
+        <!-- Product Details End -->
+
+		 <table class="table table-bordered">
+
+                  <tr>
+                    <td width="77%;" class="text-right"><b> Total</td>
+
+					<td rowspan="3" class="text-center"><b>£480.00</b></td>
+                  </tr>
+
+
+
+                </table>
+
+
+
+      </div>
+	   <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4>Payment Details</h4>
+          </div>
+          <div class="panel-body" style="line-height:40px;">
+            <div class="col-md-12 col-xs-12" style="    background: #eef0f1;
+    border-radius: 5px;margin-top:10px;">
+              <div class="row" style=" padding-top:15px">
+                <div class="col-md-12 col-xs-12" >
+                  <div class="col-md-4 col-xs-5 text-right" >
+                    <label class="">Name on Card</label>
+                  </div>
+                  <div class="col-md-8 col-xs-7" >
+                    <input type="text" class="form-control " placeholder="Customer Name" >
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 col-xs-12" >
+                  <div class="col-md-4 col-xs-6 text-right" >
+                    <label class="">Card Number</label>
+                  </div>
+                  <div class="col-md-8 col-xs-6" >
+                    <input type="text" class="form-control" placeholder="1111 2222 3333 4444">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 col-xs-12" >
+                  <div class="col-md-4 col-xs-6 text-right" >
+                    <label class="">Expiration</label>
+                  </div>
+                  <div class="col-md-3 col-xs-2" >
+                    <select class="form-control">
+                      <option value="0:00">MM</option>
+                      <option value="0:00">01</option>
+                      <option value="0:15">02</option>
+                      <option value="0:30">03</option>
+                      <option value="0:45">04</option>
+                      <option value="1:00">05</option>
+                      <option value="1:15">06</option>
+                      <option value="1:30">07</option>
+                      <option value="1:45">08</option>
+                      <option value="2:00">09</option>
+                      <option value="2:15">10</option>
+                      <option value="2:30">11</option>
+                      <option value="2:45">12</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4 col-xs-2" >
+                    <select class="form-control">
+                      <option value="0:00">YYYY</option>
+                      <option value="0:00">2019</option>
+                      <option value="0:15">2020</option>
+                      <option value="0:30">2021</option>
+                      <option value="0:45">2022</option>
+                      <option value="1:00">2023</option>
+                      <option value="1:15">2024</option>
+                      <option value="1:30">2025</option>
+                      <option value="1:45">2026</option>
+                      <option value="2:00">2027</option>
+                      <option value="2:15">2028</option>
+                      <option value="2:30">2029</option>
+                      <option value="2:45">2030</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 col-xs-12" >
+                  <div class="col-md-4 col-xs-6 text-right" >
+                    <label class=" ">CVC</label>
+                  </div>
+                  <div class="col-md-3 col-xs-2" >
+                    <input type="text" class="form-control" placeholder="123">
+                  </div>
+                  <div class="col-md-2 col-xs-2" >
+                    <div class="tooltip1"><i class="glyphicon glyphicon-question-sign"></i> <span class="tooltiptext">The CVC is the 3 digit code on the back of your card, or the 4 digit code on the front of your AMEX.</span> </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 col-xs-12 cards text-center"> <img src="img/visa-small.png" alt="" title=""><img src="img/mastercard-small.png" alt="" title=""><img src="img/amex-small.png" alt="" title=""><img src="img/maestro-small.png" alt="" title=""> </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 col-xs-12 cards text-center" style="padding-top:5px;"> <img src="img/worldpay.a83752499189.jpg" alt="" title="" width="100%"> </div>
+            </div>
+            <div class="row" style="line-height:20px;">
+              <div class="col-md-10 col-md-offset-1 text-center">
+
+                <p>Please confirm that you agree to our <a href="#">terms and conditions</a> then press the Book Now button below.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+		<div class="col-md-12 text-center">
+            <input  type="checkbox"> <label>I agree to the Terms &amp; Conditions &nbsp; &nbsp; </label>
+
+          <button type="submit" name="_submit" class="btn btn-large btn-success waves-effect green right">Book Now</button>
+		 <br><br>
+
+      </div>
+      </div>
+
+
+    </div>
+  </div>
+</main>
+<script type="text/javascript" src="{{ STATIC_URL }}/js/jquery.e40ec2161fe7.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}/js/datatables.bcf14f55a387.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}/js/materialize.90f5e15fea59.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}/js/portal.eef9d8cb6b7e.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}/js/formset.f7d6a977d248.js"></script>
+</body>
+</html>

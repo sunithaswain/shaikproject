@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title></title>
+	<meta name="description" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href="{{ STATIC_URL }}/material/fonts/material-design-icons/material-icons.61bc1caf7f45.css" rel="stylesheet">
+	<link href="{{ STATIC_URL }}/material/css/materialize.525710e1314c.css" rel="stylesheet">
+	<link href="{{ STATIC_URL }}/material/css/jquery.datetimepicker.b805db3bb426.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{ STATIC_URL }}/css/portal.c2bfd6b9cc10.css">
+	<link rel="stylesheet" type="text/css" href="{ STATIC_URL }}/css/styles.css">
+	<link rel="stylesheet" href="{{ STATIC_URL }}/css/bootstrap.min.css">
+	<script src="{{ STATIC_URL }}/js/jquery.min.js"></script>
+	<script src="{{ STATIC_URL }}/js/bootstrap.min.js"></script>
+	<link href="{{ STATIC_URL }}/material/css/jquery.datetimepicker.b805db3bb426.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/css/datepicker.css">
+	<script type="text/javascript" src="{{ STATIC_URL }}/js/bootstrap-datepicker.js"></script>
+	<style>
+.image {
+	background: url(img/cal1.png) no-repeat;
+	background-position: 100% 80%;
+}
+.row {
+	margin-bottom: 5px;
+}
+.table>tbody>tr>td {
+	border: none;
+}
+.table tr td
+{
+border:1px solid #ccc !important;
+}
+</style>
+	</head>
+	<body>
+<main>
+      <div class="container">
+    <div class="row" id="content">  
+          <h3> Items in Your Cart </h3>
+          <div class="col-md-9">
+         <!-- All Cart Products are displaying here -->
+
+         {% for product in cartProducts %}
+         {% endfor %}
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="row">
+                  <div class="col-xs-8 col-sm-9"> <strong style="    position: relative;    top: 10px;">
+                    <div id="DisplayName">{{DeptStation}}</div>
+                    - {{ArrStation}} </strong> </div>
+                  <div class="col-xs-4 col-sm-3 text-right">
+                <button title="Remove item from the cart" class=" btn btn-sm btn-default button-remove pull-right"> <span class="glyphicon glyphicon-trash"></span> </button>
+                <input type="hidden" name="optionReference" value="1" id="optionReference">
+                <strong style="    position: relative;    top: 10px;    left: -10px;">£ {{faredata}}&nbsp;</strong> </div>
+              </div>
+          </div>
+
+         
+          
+              <div class="panel-body"> 
+                
+			  
+			         <table class="table table-bordered">
+
+                  
+                  <tr>
+                    <td><b> Train No-</td>
+                    <td>{{Train}}</td> 
+					           <td><b> Class of service</td>
+                    <td>{{fareClass}}</td>
+                  </tr>
+                    <tr>
+                    <td><b> Departure</td>
+                    <!-- <td>2019-01-16 08:00</td>  -->
+                    <td>{{DeptTime}}</td>
+                  
+                    <td><b>Arrival</td>
+                      <td>{{ArrTime}}</td>
+                    <!-- <td>2019-01-16 10:05</td> -->
+				 
+                  </tr>
+				   <tr>
+                    <td><b> Sales Conditions:</td>
+                    <td>Non-Refundable</td> 
+                  
+                    <td><b>Passengers</td>
+                    <td>{{passengercount}}</td>
+				 
+                  </tr>
+                </table>            
+			  
+             
+          </div>
+          
+            
+      </div>
+
+    </div>
+      <!-- All Cart Products  -->
+      
+          <div class="col-md-12"> </div>
+          <div class="col-md-12" style="padding-top:5px;">
+        <div class="row">
+              <div class="col-md-4">
+            <input type="text" class="form-control" placeholder="Your Reference">
+          </div>
+              <div class="col-md-2">
+            <input type="text" value ="" id="datepicker" class="image" placeholder="Start date"/>
+            <script>
+	  $('#datepicker').datepicker();
+function today(){
+    var d = new Date();
+    var curr_date = d.getDate();
+    var curr_month = d.getMonth() + 1;
+    var curr_year = d.getFullYear();
+    document.write(curr_date + "-" + curr_month + "-" + curr_year);
+}
+</script> 
+          </div>
+            </div>
+      </div>
+          <div class="col-md-9" style="padding-top:10px;">
+        <div class="row">
+              <div class="col-md-4">
+            <textarea class="materialize-textarea" cols="40" rows="10" style="height: 45px;" placeholder="Ticket Delivery Address"></textarea>
+          </div>
+              <div class="col-md-8">
+            <textarea class="materialize-textarea" cols="40" rows="10" style="height: 45px;" placeholder="Notes"></textarea>
+          </div>
+            </div>
+			 <div class="row">
+              <div class="col-md-12">
+            <div class="fixed-action-btn text-right">
+                  <div id="edit-submit"> <a class="btn btn-primary"> Book Now</a>
+                   
+                <ul>
+                      <li> <a href="{% url 'sumaryinfo' %}">
+                        <button type="submit"  class="btn waves-effect purple lighten" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0; width:218px;"><i class="material-icons left">turned_in</i>Invoice My Company</button>
+                        </a> </li>
+                      <li> <a href="{% url 'summary1info' %}">
+                        <button type="submit" class="btn waves-effect green" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0; width:218px;"><i class="material-icons left">credit_card</i>I'll Pay Now</button>
+                        </a> </li>
+                    </ul>
+              </div>
+                </div>
+
+              <div class="fixed-action-btn text-left">
+                 <div id="contiune booking"> <a href="{%url 'homedetail'%}" class="btn btn-primary"> Contiune booking</a>
+              </div>
+          </div>
+            </div>
+      </div>
+         
+        </div>
+  </div>
+    </main>
+<script type="text/javascript" src="{{ STATIC_URL }}/js/jquery.e40ec2161fe7.js"></script> 
+<script type="text/javascript" src="{{ STATIC_URL }}/js/datatables.bcf14f55a387.js"></script> 
+<script type="text/javascript" src="{{ STATIC_URL }}/js/materialize.90f5e15fea59.js"></script> 
+<script type="text/javascript" src="{{ STATIC_URL }}/js/portal.eef9d8cb6b7e.js"></script> 
+<script type="text/javascript" src="{{ STATIC_URL }}/js/formset.f7d6a977d248.js"></script>
+</body>
+</html>

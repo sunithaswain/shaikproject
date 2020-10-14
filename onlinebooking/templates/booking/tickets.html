@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>Trains List</title>
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="{{ STATIC_URL }}material/fonts/material-design-icons/material-icons.61bc1caf7f45.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}material/css/materialize.525710e1314c.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}material/css/jquery.datetimepicker.b805db3bb426.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/portal.c2bfd6b9cc10.css">
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/styles.css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/bootstrap.min.css">
+    <script src="{{ STATIC_URL }}js/jquery.min.js"></script>
+    <script src="{{ STATIC_URL }}js/bootstrap.bundle.js"></script>
+    <script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
+<style>
+.row {
+  margin: 0px;
+  padding-right: 15px;
+}
+.btn-large {
+  font-size: 16px;
+}
+.table {
+  margin-bottom: 0px;
+}
+.panel-title {
+  font-size: 14px;
+}
+.panel-heading {
+  padding: 0px;
+}
+.h6, h6 {
+  padding-left: 10px;
+}
+</style>
+<script language="javascript">
+    function fareSubmit(fare,classfare){
+      debugger;
+        console.log(fare);
+        console.log(classfare);
+        classfare = classfare.trim();
+
+        var fareTag = document.getElementsByName("fare")
+        fareTag[0].value = fare;
+        var fareClassTag = document.getElementsByName("fareclass");
+        fareClassTag[0].value = classfare;
+
+        var fare_ref_id = "fare_ref_"+fare;
+        var fare_ref_value = document.getElementById(fare_ref_id).value;
+        var fareReferenceTag = document.getElementsByName("farereference");
+        fareReferenceTag[0].value = fare_ref_value;
+        
+        var heading = $("#head_data").text()
+        var headerTag = document.getElementsByName("header")
+        headerTag[0].value = heading;
+        // document.forms(0).submit();
+
+    }
+    // Sales Condition
+    function salesCondion(){
+
+      console.log("coming soon")
+      $('[data-toggle="tooltip"]').tooltip();
+
+    }
+
+</script>
+
+</head>
+<body>
+<main>
+  <div class="container">
+    <div class="row">
+
+        <h3>Point to Point Tickets</h3>
+
+        {% if Error %}
+        <!-- When Response is Error -->
+        <div class="alert alert-info">
+            <ul>
+              <li>
+                Fares are currently Unavailable for Selected stations
+              </li>
+            </ul>
+
+          </div>
+
+        {% else %}
+        <!-- When Successful Response -->
+
+        <form method="post" action="{% url 'ticket' %}">
+          {% csrf_token %}
+        <div class="row">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h6 id="head_data" style="font-size:17px;"> {{loc}} - {{point}} - {{dateinfo}}</h6>
+                <input type="hidden" name="fare" id="adultsCount1" value="">
+                <input type="hidden" name="fareclass" id="adultsCount2" value="">
+                <input type="hidden" name="farereference" id="adultsCount1" value="">
+                <input type="hidden" name="header" id="adultsCount2" value="">
+
+              <input type="hidden" name="adults_count" id="adultsCount" value="{{adults}}">
+              <input type="hidden" name="child_count" id="childCount" value="{{childs}}">
+            </div>
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width:20%;padding-left: 25px;">Origin</th>
+                    <th style="width:20%;padding-left: 10px;">Destination</th>
+                    <th style="width:10%;">Departure</th>
+                    <th style="width:10%;">Arrival</th>
+                    <th style="width:10%;">Duration</th>
+                    <th style="width:10%;">Changes</th>
+                    <th style="width:10%;">Price from</th>
+                  </tr>
+                </thead>
+              </table>
+              <div class="">
+                <div class="panel-group" id="accordion">
+                  <div class="panel panel-default">
+                    {%for result in final_result%}
+                      {% with index_value=result.index %}
+                    <div class="panel-heading">
+                      <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{index_value}}">
+                        <table class="table">
+
+                          <tr class="a_journey success selected">
+                            <td style="width:20%;"><span class="glyphicon glyphicon-chevron-right"></span>{{loc}}</td>
+                            <td style="width:20%;">{{point}}</td>
+                            {% with dep_time=result.departure %}
+                            <td style="width:10%;">{{dep_time}}</td>
+                            {%endwith%}
+                            <td style="width:10%;">{{result.arrival}}</td>
+                            <td style="width:10%;">{{result.duration}}</td>
+                            <td style="width:10%;">{{result.changes}}</td>
+                            {%if result.lowest_price %}
+                            <td id = "price_from_{{index_value}}" style="width:10%;" > {{result.lowest_price}} </td>
+                            {% else %}
+                            <td id = "price_from_{{index_value}}" style="width:10%;" > Details </td>
+                            {% endif %}
+                          </tr>
+
+                        </table>
+                        </a> </h4>
+
+                    </div>
+                    <div id="collapse{{index_value}}" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        <tbody>
+
+                          <!-- A JOURNEY'S DETAILS -->
+                          <tr style="" class="journey_details">
+                            <td colspan="7">
+                              <div class="panel panel-success">
+                                <div class="panel-heading"><span class="glyphicon glyphicon glyphicon-time" aria-hidden="true"></span> Journey Details</div>
+                                <div class="panel-body">
+                                  <ul>
+                                    <li> <span class="fa fa-train" style="padding-right:5px;" data-toggle="popover" data-html="true" data-content="Train Service" data-trigger="hover" data-original-title="" title=""></span>
+                                    {% for jj in result.journey_details%}
+                                    <div id = "train">
+                                    Train {{jj.train}}
+                                      - Depart <strong>{{jj.dept_station}}</strong> at {{jj.dept_time}} - Arrive <strong>{{jj.arr_station}}</strong> at {{jj.arr_time}}
+                                    </div>
+
+                                      {% endfor%}
+                                  </td>
+                                      <!-- <br></br> -->
+                                      </li>
+                                  </ul>
+                                </div>
+                                <!--/panel-body-->
+                              </div>
+                              <!--/panel-->
+                              {%if result.lowest_price %}
+                              <table class="table">
+                                <tbody>
+                                  
+                                  <tr>
+                                    <th class="col-md-10"> One-Way </th>
+                                   {% for class in classes%}
+                                    <th class="text-center col-md-1" style="width:100%"> {{class}}
+                                     
+                                    </th>
+                                    {% endfor %}
+                                  </tr>                                  
+
+                                  <!-- new code -->
+
+                                  {%for data in result_output%}
+                                  {% for key, value in data.items %}
+
+                                  {% if key == index_value %}
+                                  {% for i, j in value.items %}
+
+                          {%if i != 'min' %}
+
+                                      <tr>
+                                          <td class="">
+                                            <div id="DisplayName">
+                                              {% if i == 'sales'%}
+                                              <p data-toggle="tooltip" data-placement="right" title="{{i}}"></p>
+                                              {% else %}
+                                              {{i}}
+                                              
+                                              <span class="glyphicon glyphicon-exclamation-sign sales_condition" onmouseover="salesCondion()" ></span>
+                                              
+                                            {% endif %}
+                                            </div>                                              
+
+                                          </td>
+                                      {%for ik, jk in j.items %}
+                                        {% for class in classes%}
+                                          {%if class == ik%}
+                                            <td class="text-center "><a href="{% url 'traveller' %}"><button class="btn btn-default fare_data" onclick="javascript:fareSubmit('{{ jk }}','{{ ik }}');" title="Add to cart"   style="width:100%"> £{{jk}}&nbsp;<span class="glyphicon glyphicon-shopping-cart" style="font-size:0.8em;"></span> </button></a>                                         
+                                            </td>
+                                            {%else%}
+
+                                              <td></td>
+                                            {%endif%}
+
+                                            {%endfor%}
+                                            <input type="hidden" id="fare_ref_{{ik}}" value="{{jk}}" name="">
+                                          {%endfor%}
+                                        </tr>
+
+                                       {% endif %}
+
+
+                                        {%endfor%}
+
+
+                                  {%endif%}
+
+
+                                  {% endfor %}
+                                  {% endfor %}
+
+
+                                  <!--  new code -->
+
+                                </tbody>
+                              </table>
+                              {% endif %}
+                              
+                          </tr>
+                        </tbody>
+                      </div>
+                    </div>
+                    {%endwith%}
+                    {% endfor %}
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </form>
+
+
+        <!-- Error If -->
+        {% endif %}
+
+        <a href="{% url 'homedetail' %}" style="text-decoration: none;color:white;"><button type="submit" class="btn btn-info" > Back Home</button></a>
+
+
+
+
+
+    </div>
+  </div>
+</main>
+<script type="text/javascript" src="js/jquery.e40ec2161fe7.js"></script>
+<script type="text/javascript" src="js/datatables.bcf14f55a387.js"></script>
+<script type="text/javascript" src="js/materialize.90f5e15fea59.js"></script>
+<script type="text/javascript" src="js/portal.eef9d8cb6b7e.js"></script>
+<script type="text/javascript" src="js/formset.f7d6a977d248.js"></script>
+
+
+
+</body>
+
+
+
+
+
+
+</html>

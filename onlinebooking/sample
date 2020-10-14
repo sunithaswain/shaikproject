@@ -1,0 +1,14 @@
+
+Manchester (from)
+
+London (to)
+
+http://127.0.0.1:8000/static//Locations/locations.js 
+
+
+uit the server with CTRL-BREAK.
+b'<ACP_RailAvailRQ xmlns="http://www.acprailinternational.com/API/R2" ResponseType="Native-Availability"><POS><RequestorID>RTG-XML</RequestorID></POS><RailAvailInfo><OriginDestinationSpecifications><OriginLocation LocationCode="0" /><DestinationLocation LocationCode="0" /><Departure DepartureDate="2020-01-02T8:00" /></OriginDestinationSpecifications><PassengerSpecifications><PassengerType Age="-1" Quantity="1" /></PassengerSpecifications><FareQualifier RateCategory="Regular" /><ResponsePtPTypes><ResponsePtPType>TW</ResponsePtPType></ResponsePtPTypes></RailAvailInfo></ACP_RailAvailRQ>'
+*********************************************************************************************************
+<?xml version="1.0" encoding="UTF-8"?>b'<ACP_RailAvailRQ xmlns="http://www.acprailinternational.com/API/R2" ResponseType="Native-Availability"><POS><RequestorID>RTG-XML</RequestorID></POS><RailAvailInfo><OriginDestinationSpecifications><OriginLocation LocationCode="0" /><DestinationLocation LocationCode="0" /><Departure DepartureDate="2020-01-02T8:00" /></OriginDestinationSpecifications><PassengerSpecifications><PassengerType Age="-1" Quantity="1" /></PassengerSpecifications><FareQualifier RateCategory="Regular" /><ResponsePtPTypes><ResponsePtPType>TW</ResponsePtPType></ResponsePtPTypes></RailAvailInfo></ACP_RailAvailRQ>'
+*********************************************************************************************************
+<?xml version="1.0" encoding="UTF-8"?><ACP_ErrorRS xmlns="http://www.acprailinternational.com/API/R2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.acprailinternational.com/API/R2 ACP_ErrorRS.xsd" Version="1.001" TimeStamp="2019-12-26T19:40:32" Target="Production" ErrorCode="Validation" ErrorMessage="Validation error at XML ERROR: received data has failed core XML tidyness test.  Possible tag pair mismatch, XML syntax error, or premature EOF."/>

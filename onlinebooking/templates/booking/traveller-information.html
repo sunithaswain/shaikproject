@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title></title>
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="{{ STATIC_URL }}/material/fonts/material-design-icons/material-icons.61bc1caf7f45.css" rel="stylesheet">
+<link href="{{ STATIC_URL }}/material/css/materialize.525710e1314c.css" rel="stylesheet">
+<link href="{{ STATIC_URL }}/material/css/jquery.datetimepicker.b805db3bb426.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/css/portal.c2bfd6b9cc10.css">
+<link rel="{{ STATIC_URL }}/stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" href="{{ STATIC_URL }}/css/bootstrap.min.css">
+<script src="{{ STATIC_URL }}/js/jquery.min.js"></script>
+<script src="{{ STATIC_URL }}/js/bootstrap.min.js"></script>
+<link href="{{ STATIC_URL }}/material/css/jquery.datetimepicker.b805db3bb426.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/css/datepicker.css">
+<script type="text/javascript" src="{{ STATIC_URL }}/js/bootstrap-datepicker.js"></script>
+<style>
+.image {
+	background: url(img/cal1.png) no-repeat;
+	background-position: 100% 80%;
+}
+.row {
+	margin-bottom: 5px;
+}
+.form-control {
+	padding: 6px 3px;
+}
+.heading {
+	color: #333;
+	background-color: #f5f5f5;
+	border-color: #ddd;
+	padding: 10px 15px;
+	border-bottom: 1px solid transparent;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border: 1px solid #ccc;
+	font-size: 17px;
+}
+</style>
+
+<script>
+function myFunction(){
+
+  debugger;
+
+
+	var elements = document.getElementById("passenger-form").elements;
+
+	// console.log(elements)
+  
+  var passengersList = [];  
+
+	for (var i = 0, element; element = elements[i++];) 
+		{// start for 
+
+        var dict1 = {}
+
+
+	    if (element.type === "text" && element.value === "")
+	    {
+	        console.log("it's an empty textfield")
+	    }
+	    else
+	    {
+	    	// console.log(element.value)
+	    	// console.log(element.id)
+	    	if (element.id == 'firstname')
+        {
+          dict1['first_name']=element.value
+          // console.log(element.value)
+        }          
+          
+        if (element.id == 'secondname')
+        {
+          dict1['secondname']=element.value
+          // console.log(element.value)
+        }
+        if (element.id == 'passport')
+        {
+          dict1['passport']=element.value
+          // console.log(element.value)
+        }
+        if (element.id == 'nationality')
+        {
+          dict1['nationality']=element.value
+          // console.log(element.value)
+        }
+        if (element.id == 'dob')
+        {
+          dict1['dob']=element.value
+          // console.log(element.value)
+        }
+	    }// else end
+      // console.log(dict1)
+      passengersList.push(dict1);
+
+	}//endfor
+
+  console.log(passengersList);
+
+
+  var passTag = document.getElementsByName("passengersData")
+  passTag[0].value = JSON.stringify(passengersList);
+
+
+};
+
+
+
+</script>
+</head>
+<body>
+<main>
+  <div class="container">
+    <div class="row" id="content"> 
+       
+      <div class="col-md-12" style="padding-top:5px;">
+
+    
+        <h3> Traveller Information </h3>
+        <br>
+        <p class="heading">{{date_text}} <p/>
+
+ <form id="passenger-form" method="post" action="{% url 'traveller' %}">
+      {% csrf_token %}
+      <input type="hidden" name="passengersData" id="" value="">
+    
+        {% for adult in adults_count %}
+          <div class="row">
+              <div class="col-md-1 col-xs-2">
+                <p class="pull-right" style="padding-top:5px;">Adult</p>
+              </div>
+              <div class="col-md-1 col-xs-1">
+                <select class="form-control" style="width: 60px;">
+                  <option>Mr</option>
+                  <option>Mrs</option>
+                  <option>Ms</option>
+                </select>
+              </div>
+              <div class="col-md-3 col-xs-9">
+                <input type="text"  id="firstname" name="firstparent" class="form-control" placeholder="First name" value="">
+              </div>
+              <div class="col-md-2">
+                <input type="text"id="secondname"  name="secondparent" class="form-control" placeholder="Last name" value="">
+              </div>
+              {% if passport == "true" %}
+              <div class="col-md-2">
+              	<input type="text"id="passport" name="passportparent" class="form-control" placeholder="Passport" value="">
+              </div>
+              {% endif %}
+              {% if nationality == "true" %}
+              <div class="col-md-2">
+              	<input type="text"id="nationality" name="nationalityparent" class="form-control" placeholder="Nationality" value="">
+              </div>
+              {% endif %}
+              {% if dob == "true" %}
+              <div class="col-md-1">
+              	<input type="text" id="dob" class="ui-corner-all input-datepicker calendar" style="width: 150px" placeholder="Date of Birth" value="" name="">
+              </div>
+              {% endif %}
+              
+          </div>
+        {% endfor %}
+        <br>
+
+        
+
+
+        {% for child in child_count %}
+        <div class="row">
+          <div class="col-md-1 col-xs-2">
+            <p class="pull-right" style="padding-top:5px;">Child</p>
+          </div>
+          <div class="col-md-1 col-xs-1">
+            <select class="form-control">
+              <option>Mr</option>
+              <option>Mrs</option>
+              <option>Ms</option>
+            </select>
+          </div>
+          <div class="col-md-3">
+            <input type="text" id="firstname" name="firstchildname" class="form-control" placeholder="First name" value="">
+          </div>
+          <div class="col-md-2">
+            <input type="text" id="secondname" name="secondchildname" class="form-control" placeholder="Last name" value="">
+          </div>
+
+          {% if passport == "true" %}
+              <div class="col-md-2">
+                <input type="text"id="passport" name="passportparent" class="form-control" placeholder="Passport" value="">
+              </div>
+              {% endif %}
+              {% if nationality == "true" %}
+              <div class="col-md-2">
+                <input type="text"id="nationality" name="nationalityparent" class="form-control" placeholder="Nationality" value="">
+              </div>
+              {% endif %}
+              {% if dob == "true" %}
+              <div class="col-md-1">
+                <input type="text" id="dob" class="ui-corner-all input-datepicker calendar" style="width: 150px" placeholder="Date of Birth" value="" name="">
+              </div>
+              {% endif %}
+        </div>
+
+        {% endfor %}
+    
+
+
+		<br>
+		<div class="row">
+		 <div class="col-md-12 col-xs-12">
+		<h4>Select Reservation Details</h4>
+		
+		
+		</div>
+		<div class="col-md-3 col-xs-12">
+		<div class="col-md-4 col-xs-4"><label style="padding-top:7px;">Position</label></div>
+		 <div class="col-md-8 col-xs-8"><select class="form-control">
+             <option value="">Any</option>
+    <option value="Unspecified">Unspecified</option>
+            </select>
+				</div>
+		</div>
+		<div class="col-md-4 col-xs-12">
+		<div class="col-md-6 col-xs-4"><label style="padding-top:7px;">Compartment type</label></div>
+		 <div class="col-md-6 col-xs-8"><select class="form-control">
+            <option value="">Any</option>
+    <option value="Unspecified">Unspecified</option>
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+            </select>
+				</div>
+		</div>
+		<div class="col-md-5 col-xs-12">
+		<div class="col-md-5 col-xs-4"><label style="padding-top:7px;">Special request</label></div>
+		 <div class="col-md-7 col-xs-8"><select class="form-control">
+            <option value="">Any</option>
+    <option value="Unspecified">Unspecified</option>
+    <option value="Disabled seat">Disabled seat</option>
+    <option value="Wheelchair seat">Wheel chair seat</option>
+    <option value="Wheelchair space with seat">Wheel chair space with seat</option>
+            </select>
+				</div>
+		</div>
+		
+		</div>
+		
+		
+		<br><br>
+		<div class="row">
+		<div class="col-md-3 pull-right">
+		
+            <button type="submit" onclick="myFunction()"class="btn btn-success form-control " style="text-align:center !important;">Add to cart</button> </div>
+          </div>
+		</div>
+		
+      </div>
+    </form>
+    </div>
+  </div>
+</main>
+<script type="text/javascript" src="{{ STATIC_URL }}js/jquery.e40ec2161fe7.js"></script> 
+<script type="text/javascript" src="{{ STATIC_URL }}js/datatables.bcf14f55a387.js"></script> 
+<script type="text/javascript" src="{{ STATIC_URL }}js/materialize.90f5e15fea59.js"></script> 
+<script type="text/javascript" src="{{ STATIC_URL }}js/portal.eef9d8cb6b7e.js"></script> 
+<script type="text/javascript" src="{{ STATIC_URL }}js/formset.f7d6a977d248.js"></script>
+
+</body>
+</html>
